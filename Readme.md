@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-* Студент: [MiX FiX](https://up.htmlacademy.ru/htmlcss/32/user/1853915).
+* Студент: [Artem Kazuta](https://up.htmlacademy.ru/htmlcss/32/user/1853915).
 * Наставник: `Неизвестно`.
 
 ---
