@@ -39,10 +39,9 @@ body{
     width: 1260px;
     margin: 0 auto;
     margin-top: 40px;
-    
 }
 
-header{
+.page-header{
     background-color: #FFE17F ;
     height: 300px;
     
@@ -69,8 +68,9 @@ header{
     
 }
 .logo{
-    margin-left:61px;
-    margin-top: - 24px;
+    
+    margin-left: 91px;
+    margin-top: -36px;
 }
 a{
     color:#000000;
@@ -96,23 +96,20 @@ a{
 .main-nav-list{
     display: flex;
     justify-content: space-between;
-    margin-left: 60px;
-    
+    margin-left: 60px;    
 }
 .main-nav-list .main-nav-item:nth-child(2){
-    margin-left: 304px;
+    margin-left: 230px;
 }
 .main-nav-list .main-nav-item:last-child{
     margin-right: 59px;
 }
-.main-nav-list .main-nav-item:nth-child(3){
-    margin-right: 2px;
-}
+
 .nav-user-list .nav-user-item:nth-child(2){
-    margin-left: 235px;
+    margin-left: 190px;
 }
 .nav-user-list .nav-user-item:nth-child(3){
-    margin-left: 90px;
+    margin-left: 160px;
 }
 
     
@@ -182,7 +179,7 @@ a{
     
     width: 560px;
 }
-.infa p{
+.opisanie-babochki{
     font-family: "Rubik", sans-serif;
     color: #444444;
     font-size: 18px;
@@ -201,8 +198,7 @@ a{
     width: 220px;
     height: 8px;
     line-height: 8px;
-    
-   
+    letter-spacing: 0.2em;
 }
 .slider-pagination{
     margin-top: 30px;
@@ -313,9 +309,7 @@ a{
     margin-top: 49px;
 }
 .opisanie{
-   
-    
-    display: flex;
+   display: flex;
     align-items: flex-start;
     margin-top: 200px;
     background-color: #F0F0F0;
@@ -326,14 +320,8 @@ a{
 .prochee{
     display: flex;
     flex-direction: column;
-    
     height: 319px;
-    
-    
-    
-    
-
-    
+    margin-top: -20px;
 }
 .prochee button{
     border: none;
@@ -356,7 +344,8 @@ a{
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
-    background-color: #000000; 
+    background: none;
+    background-color: #000000;
     width: 240px;
     height: 40px;
     line-height: 8px;
@@ -365,12 +354,15 @@ a{
     position: relative;
 
 }
+
 .prochee button span{
     position: absolute;
     right: 71px;
     bottom: 15px;
 }
-
+.visually-hidden{
+    visibility: hidden;
+}
 .promice{
     margin-left: 116px;
     margin-top: -60px;
@@ -454,7 +446,7 @@ a{
     margin-bottom: 40px;
     padding-top: 10px;
 }
-.information-about-us ul li{
+.information-about-us-company .information-about-us-company-item{
     background: url('../img/Ellipse\ 11.png') left no-repeat;
     padding-left: 26px;
     margin-bottom: 10px;
@@ -462,7 +454,7 @@ a{
     font-size: 18px;
     font-weight: 700;
 }
-.information-about-us ul{
+.information-about-us .information-about-us-company{
     padding-top: 37px;
     margin-bottom:45px;
 }
@@ -594,7 +586,7 @@ a{
     transition-timing-function:ease-in-out;
 }
 .subscribed:hover{
-    background-color: #a3a3a3;
+    background-color: #cac8c8;
 }
 .subscribe p{
    
@@ -608,7 +600,7 @@ a{
     position: absolute;
     left: 1250px;
     top: 230px;
-    background: url('../img/Vector.png') left no-repeat;
+    background: url('../img/galochka.svg') left no-repeat;
     padding-left: 26px;
 
 }
@@ -624,7 +616,7 @@ a{
     
   }
   
-.footer img {
+.img-footer {
     margin-left: 138px;
     margin-top: 62px;
   }
@@ -638,36 +630,38 @@ a{
   .footer-list {
     margin-left: 195px;
     margin-top: 137px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    margin-bottom: 63px;
     display: flex;
   }
   
-  .footer-list li a {
+  .footer-list-item a {
     color: #FFFFFF;
     text-transform: uppercase;
     margin-right: 27px;
     font-family: "Rubik", sans-serif;
     font-weight: 800;
     letter-spacing: 0.2em;
+    
   }
   
   .silki-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
    
-            align-items: flex-start;
-    margin-left: 165px;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 325px;
   }
   
   .silki-list li {
-    margin-right: -120px;
-  }
-  
-  .href a {
+    margin-right: 15px;
+}
+.href a {
     color: #F0F0F0;
     letter-spacing: 0.2em;
+  }
+  .href{
+    margin-top: 138px;
+    margin-left: 120px;
+    
   }
   
   .slider-pagination-item button {
@@ -677,10 +671,10 @@ a{
     height: 12px;
   }
   
-  .logo-2 {
-    position: absolute;
-    left: 1100px;
-  }
+.logo-2{
+    margin-top: 53px;
+    margin-left: 200px;
+}
   
   .slider-pagination-item .slider-pagination-button-1 {
     border: 1px solid #000000;
