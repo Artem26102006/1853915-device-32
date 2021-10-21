@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "Raleway";
     font-style: normal;
@@ -11,7 +12,6 @@
     font-weight: 700;
     src: url(fonts/rubik/rubik-700.woff2) format("woff2");
     font-display: swap;
-
 }
 @font-face {
     font-family: "Rubik";
@@ -19,7 +19,6 @@
     font-weight: 400;
     src: url(fonts/rubik/rubik-400.woff2) format("woff2");
     font-display: swap;
-
 }
 @font-face {
     font-family: "Rubik";
@@ -27,8 +26,9 @@
     font-weight: 800;
     src: url(fonts/rubik/rubik-800.woff2) format("woff2");
     font-display: swap;
-
 }
+
+
 ul{
     list-style-type: none;
 }
@@ -40,43 +40,44 @@ body{
     margin: 0 auto;
     margin-top: 40px;
 }
-
 .page-header{
+    position: relative;
     background-color: #FFE17F ;
     height: 300px;
+}
+.two_zero{
+    position: absolute;
+    font-weight: 800;
+    font-size: 170px;
+    z-index: 1;
+    top: 225px;
+    left: 980px;
+    color: #FFFFFF;
     
 }
-
 .nav-user{
     margin-top: 49px;
     margin-bottom: 45px;
 }
 .nav-user-list{
-    
     list-style: none;
-   
 }
 .main-nav-list{
-   
     list-style-type: none;
-    
-    
 }
 .nav-user-item-button{
     background-color: #FFE17F;
     border: none;
-    
 }
-.logo{
-    
+.logo-device{
     margin-left: 91px;
     margin-top: -36px;
+    
 }
 a{
     color:#000000;
     text-decoration: none;
 }
-
 .main-nav-list .main-nav-item{
     text-transform: uppercase;
     font-weight: 800;
@@ -87,16 +88,14 @@ a{
     display: flex;
     justify-content: space-between;
     margin-left: 60px;
-   
-
 }
-.nav-user-list  .nav-user-item:last-child{
+.nav-user-list .nav-user-item:last-child{
     margin-right: 59px;
 }
 .main-nav-list{
     display: flex;
     justify-content: space-between;
-    margin-left: 60px;    
+    margin-left: 60px;
 }
 .main-nav-list .main-nav-item:nth-child(2){
     margin-left: 230px;
@@ -104,15 +103,12 @@ a{
 .main-nav-list .main-nav-item:last-child{
     margin-right: 59px;
 }
-
 .nav-user-list .nav-user-item:nth-child(2){
-    margin-left: 190px;
+    margin-left: 280px;
 }
 .nav-user-list .nav-user-item:nth-child(3){
-    margin-left: 160px;
+    margin-left: 180px;
 }
-
-    
 .search{
     margin-right: 20px;
 }
@@ -125,130 +121,114 @@ a{
 .korzina{
     margin-right: 10px;
 }
-
-
-
 .main{
     background-color: none;
-    
     margin-left: -20px;
-    
 }
 .slider{
     display: flex;
+    margin-left: 0px;
+    margin-bottom: 91px;
+}
+.sliders .slider-3{
+    position: absolute; 
+    visibility: hidden;
+}
+.sliders .slider-2{
+    position: absolute; 
+    visibility: hidden;
+}
+.slider-image{
+    z-index: 2;
 }
 .container-flex{
-    display:  flex;
+    display: flex;
     align-items: center;
-    
+    margin-bottom: 70px;
+}
+.slider-pagination-item{
+    margin-top: 20px;
 }
 .slider-pagination{
     display: flex;
-    
 }
-.babochka{
+.title-middle{
     font-size: 50px;
+    line-height: 50px;
+    width: 560px;
 }
-
-
+.title-middle-first{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.paragraph{
+    font-family: "Rubik", sans-serif;
+    color: #444444;
+    font-size: 18px;
+    line-height: 30px;
+}
 .slider-pagination .slider-pagination-item{
     margin-right: 22px;
-    
-    
 }
 .slider-button{
     background-color: rgb(255, 255, 255);
     border: none;
+    height: 100px;
+    margin-top: 100px;
 }
 .slider-button-left{
-    margin-left: 19px;
+    cursor: pointer;
 }
 .slider-button-right{
-    margin-right: 59px;
-    
-}
-.slider-pagination-button .visually-hidden{
-    visibility: hidden;
+    cursor: pointer;
 }
 .infa{
-    margin-top: -65px;
-    margin-left: 40px;
+    margin-top: -40px;
+    margin-left: 80px;
+    z-index: 1;
 }
-.infa .babochka{
-    line-height: 50px;
+.important-infa{
+    display: flex;
+    margin: 0px;
+    column-gap: 30px;
     
-    width: 560px;
 }
-.opisanie-babochki{
-    font-family: "Rubik", sans-serif;
-    color: #444444;
-    font-size: 18px;
+.infa-item{
+    margin-left: 0;
+    
 }
-.container-flex .podrobnee-1{
-    text-decoration: none;
+.block-infa{
+    margin-right: 20px;
 }
-.podrobnee-1{
-    margin-top: 20px;
-    margin-right: 50px;
+.h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.cliker{
     font-weight: 800;
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
-    background-color: #FFE17F; 
+    background-color: #FFE17F;
     width: 220px;
     height: 8px;
     line-height: 8px;
     letter-spacing: 0.2em;
 }
-.slider-pagination{
-    margin-top: 30px;
+.cliker-podrobnee{
+    margin-top: 20px;
+    margin-right: 50px;
 }
-.slider-pagination-button{
-    width: 13px;
-    height: 13px;
-    border: 1px solid #000000;
-    border-radius: 70%;
-    margin-top: 7px;
-    background-color: #FFFFFF;
-}
-.slider-pagination-button-1{
-    background-color: #000000;
+.cliker-podrobnee-1{
+    width: 260px;
 }
 .slider-image{
     margin-top: -150px;
 }
-.import-inf{
-    display: flex;
-    margin-top: 70px;
-}
-.slider-polet{
-    margin-right: 20px;
-}
-.slider-metr{
-    font-size: 36px;
-    font-family:  "Rubik",  sans-serif;
-    text-transform: uppercase;
-}
-.slider-polet p{
-    font-size: 16px;
-}
-.slider-radius p{
-    font-size: 16px;
-}
-.slider-radius-2{
-    font-size: 36px;
-    font-family:  "Rubik",  sans-serif;
-    text-transform: uppercase;
-}
 .goods{
     display: flex;
-   
+    margin-bottom: 300px;
 }
-
-.opisanie{
-    margin-top: 150px;
-}
-
 .goods figure{
     background-color: #FFE17F;
     min-width: 160px;
@@ -256,10 +236,7 @@ a{
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
-    margin-right: 12px;
-    
-    
-    
+    margin-right: 15px;
 }
 .one{
     margin-top:110px;
@@ -273,7 +250,6 @@ a{
 .four{
     margin-top: 97px;
     width: 180px;
-    
 }
 .five{
     margin-top: 83px;
@@ -282,10 +258,8 @@ a{
 .six{
     margin-top: 92px;
 }
-
-
 .img-1{
-    margin-left: 40px ;
+    margin-left: 32px ;
     margin-top: 53px;
 }
 .img-2{
@@ -309,57 +283,64 @@ a{
     margin-top: 49px;
 }
 .opisanie{
-   display: flex;
+    display: flex;
     align-items: flex-start;
-    margin-top: 200px;
     background-color: #F0F0F0;
     padding-left: 140px;
     margin-left: -110px;
-    margin-right: -130px;    
+    margin-right: -130px;
+    height: 319px;
+    margin-bottom: 90px;
 }
 .prochee{
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: 319px;
     margin-top: -20px;
+    margin-right: 70px;
 }
-.prochee button{
-    border: none;
-    margin-bottom: 60px;
-    font-weight: 700;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #FFE17F; 
-    width: 220px;
-    height: 8px;
-    line-height: 8px;
-    font-size: 16px;
-    letter-spacing: 0.2em;
-}
-.prochee button:first-child{
-    border: none;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
-    background: none;
-    background-color: #000000;
-    width: 240px;
-    height: 40px;
-    line-height: 8px;
-    font-size: 16px;
-    color: #FFE17F;
-    position: relative;
-
-}
-
-.prochee button span{
+.line{
     position: absolute;
-    right: 71px;
-    bottom: 15px;
+    height: 319px;
+    border-left: 7px solid #000000;
+    left: 319px;
+    top: -80px;
 }
+.cliker-3, .cliker-4, .cliker-5{
+    border: none;
+    margin-bottom: 44px;
+}
+
+.cliker-3{
+    background-color: #000000;
+    color:#FFE17F;
+    width: 280px;
+    height: 40px;
+
+
+}
+.paragraph-first{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.paragraph-second{
+    margin: 0px;
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    line-height: 30px;
+}
+.paragraph-third{
+    color: #000000;
+    letter-spacing: 0.2em;
+    text-align: center;
+    line-height: 100px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
 .visually-hidden{
     visibility: hidden;
 }
@@ -369,82 +350,72 @@ a{
     position: relative;
     
 }
-.promice h2{
+.title-middle-second{
     font-size: 50px;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
-    margin-bottom: 65px;
+    margin-bottom: 45px;
 }
-.promice p{
-    font-size: 18px;
-    font-family: "Rubik", sans-serif;
-    line-height: 30px;
-    
-}
+
 .promice img{
     position: absolute;
     left: 550px;
-    bottom: 22px;
+    bottom: 20px;
+}
+.bonus{
+    width: 1160px;
+    display: flex;
+    align-items: center;
+    
+    margin-left: 100px;
+    background-color: #F0F0F0;
+    width: 1160px;
+    height: 100px;
 }
 .bonus .lorry{
     position: relative;
     background-color: #FFE17F;
     width: 125px;
     height: 100px;
+    margin-right: 230px;
 }
 .lorry img{
     position: absolute;
     top: 32%;
     left: 30%;
 }
-.bonus p{
-    background-color: #F0F0F0;
-    width: 1160px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 20px;
+.info-lorry{
+    margin-left: auto;
+    margin-right: 31px;
+    border: none;
+    cursor: pointer;
 }
-.bonus{
-    width: 1160px;
-    display: flex;
-    align-items: center;
-    margin-top: 90px;
-    margin-left: 100px;
-}
-
 .first{
     display: flex;
     align-items: flex-start;
     margin-left: 120px;
-    margin-top: 67px;
-   
+    margin-bottom: 86px;
 }
-
 .information-about-us{
-   
-    
     margin-right: 123px;
     max-width: 560px;
-    
-    
 }
-.information-about-us h2{
+.information-about-us .title-middle{
     width:170px;
     font-family: "Raleway", sans-serif;
     font-size: 50px;
     font-weight: 800;
     border-top: 7px solid black;
     padding-top: 40px;
-    
 }
-.information-about-us p{
+.paragraph-fourth{
     font-size: 18px;
     font-family: "Rubik", sans-serif;
-    margin-bottom: 40px;
-    padding-top: 10px;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+.paragraph-fourth:last-of-type{
+    margin-bottom: 60px;
 }
 .information-about-us-company .information-about-us-company-item{
     background: url('../img/Ellipse\ 11.png') left no-repeat;
@@ -454,40 +425,19 @@ a{
     font-size: 18px;
     font-weight: 700;
 }
+.information-about-us-company-item:last-of-type{
+    margin-bottom: 0px;
+}
 .information-about-us .information-about-us-company{
-    padding-top: 37px;
-    margin-bottom:45px;
+    margin-bottom: 77px;
+    margin-top: 0px;
 }
-.url{
-    transform: scale(0.9);
-    margin-top: 29px;
-    width: 255px;
-    height: 9px;
-    font-weight: 800;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #FFE17F;
-    letter-spacing: 0.2em;
-    display: inline-block;
-    position: relative;
-    margin-bottom: 67px;
-    padding-left: 5px;
-    padding-right: 5px;
-    line-height: 8px;
-    transition-duration: 250ms;
-    transition-timing-function: linear;
-}
-.url:hover{
-    transform: scale(1);
-}
-
 .contacts h2{
     width: 130px;
     font-family: "Raleway", sans-serif;
     font-size: 50px;
     font-weight: 800;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     border-top: 7px solid black;
     padding-top: 40px;
 }
@@ -495,53 +445,37 @@ a{
     margin-bottom: 30px;
     font-size: 18px;
     font-family: "Rubik", sans-serif;
+    margin-top: 0px;
 }
 .contacts h3{
     font-size: 24px;
     font-weight: 700;
+    margin-top: 0px;
 }
 .Petesberg p{
     font-size: 18px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
+
 .Petesberg{
     margin-bottom: 30px;
 }
-
 .contacts .h3{
     font-size: 24px;
     font-weight: 700;
-
 }
-.contacts-schedule{
-    margin-top: 15px;
+.contacts-time{
+    margin-top: 0px;
+    margin-bottom: 67px;
+    padding-left: 0px;
 }
-.contacts-schedule li:first-child{
+.contacts-time .contacts-time-item:first-of-type{
     margin-bottom: 5px;
 }
-.contacts-schedule li{
+.contacts-schedule .contacts-time-item{
     font-size: 18px;
 }
-.us{
-    transform: scale(0.9);
-    width: 240px;
-    height: 8px;
-    font-weight: 800;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #FFE17F;
-    letter-spacing: 0.2em;
-    line-height: 8px;
-    margin-top: 59px;
-    margin-bottom: 67px;
-    transition-duration: 250ms;
-    transition-timing-function: linear;
-}
-.us:hover{
-    transform:scale(1);
-}
-
 .subscribe{
     padding-top: 70px;
     background-color: #F0F0F0;
@@ -549,28 +483,22 @@ a{
     margin-left: -110px;
     width: 1260px;
     padding-left: 260px;
-    height: 351px;
-    
-    
-  
-  
-    
+    height: 421px;
 }
-
 .subscribe div{
     display: flex;
 }
 .subscribe h2{
     font-size: 50px;
     font-weight: 800;
-
+    margin-top: 0px;
+    margin-top: 75px;
 }
 .subscribe input{
     border: none;
     border-bottom: 1px solid #000000;
     width: 601px;
     background-color: #F0F0F0;
-    
 }
 .subscribed{
     border: none;
@@ -588,21 +516,18 @@ a{
 .subscribed:hover{
     background-color: #cac8c8;
 }
-.subscribe p{
-   
+.subscribe .paragraph-six{
     position: absolute;
-    bottom: 225px;
-    left: 885px;
+    bottom: 236px;
+    left: 865px;
     font-size: 18px;
-   
 }
-.subscribe span{
+.free{
     position: absolute;
-    left: 1250px;
-    top: 230px;
+    left: 1260px;
+    bottom: 170px;
     background: url('../img/galochka.svg') left no-repeat;
     padding-left: 26px;
-
 }
 .footer {
     background-color: #444444;
@@ -611,75 +536,61 @@ a{
     position: relative;
     padding-right: 80px;
     margin-left: -130px;
-   
     display: flex;
-    
-  }
-  
+}
+.footer-1{
+    margin-top: 62px;
+}
 .img-footer {
     margin-left: 138px;
-    margin-top: 62px;
-  }
-  
-  .adres {
+    margin-bottom: 35px;
+}
+.adres {
     color: #FFFFFF;
     margin-left: 139px;
-    margin-top: 35px;
-  }
-  
-  .footer-list {
+}
+.footer-list {
     margin-left: 195px;
     margin-top: 137px;
     margin-bottom: 63px;
     display: flex;
-  }
-  
-  .footer-list-item a {
+}
+.footer-list-item a {
     color: #FFFFFF;
     text-transform: uppercase;
     margin-right: 27px;
     font-family: "Rubik", sans-serif;
     font-weight: 800;
     letter-spacing: 0.2em;
-    
-  }
-  
-  .silki-list {
-   
+}
+.social-list {
     display: flex;
     align-items: flex-start;
+    column-gap: 15px;
     margin-left: 325px;
-  }
-  
-  .silki-list li {
-    margin-right: 15px;
 }
 .href a {
     color: #F0F0F0;
     letter-spacing: 0.2em;
-  }
-  .href{
+}
+.href{
     margin-top: 138px;
     margin-left: 120px;
-    
-  }
-  
-  .slider-pagination-item button {
+    margin-bottom: 53px;
+}
+.logo-2{
+    margin-left: 200px;
+}
+.slider-pagination-item button {
     border: 1px solid #000000;
     border-radius: 100%;
     width: 12px;
     height: 12px;
-  }
-  
-.logo-2{
-    margin-top: 53px;
-    margin-left: 200px;
 }
-  
-  .slider-pagination-item .slider-pagination-button-1 {
+.slider-pagination-item .slider-pagination-button-1 {
     border: 1px solid #000000;
     border-radius: 100%;
     width: 12px;
     height: 12px;
     background-color: #000000;
-  }
+}
