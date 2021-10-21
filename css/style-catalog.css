@@ -331,14 +331,14 @@ body {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-top: 40px;
 }
 
 .page-header {
   background-color: #ffe17f;
   margin: 0 auto;
-  margin-top: 40px;
-  padding-bottom: 10px;
-  min-height: 190px;
+  margin-bottom: 49px;
+  min-height: 200px;
 }
 
 .footer {
@@ -353,9 +353,9 @@ body {
   display: flex;
 }
 
-.logotip {
+.logotype {
   margin-left: 138px;
-  margin-top: 62px;
+  margin-bottom: 35px;
 }
 
 .logo-device {
@@ -363,10 +363,13 @@ body {
   margin-top: -36px;
 }
 
-.adres {
+.footer-1 {
+  margin-top: 62px;
+}
+
+.address {
   color: #ffffff;
   margin-left: 139px;
-  margin-top: 35px;
   width: 239px;
 }
 
@@ -388,7 +391,7 @@ body {
   letter-spacing: 0.2em;
 }
 
-.silki-list {
+.social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,10 +399,8 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-left: 325px;
-}
-
-.silki-list li {
-  margin-right: 15px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
 }
 
 .href a {
@@ -410,10 +411,10 @@ body {
 .href {
   margin-top: 138px;
   margin-left: 120px;
+  margin-bottom: 53px;
 }
 
 .logo-2 {
-  margin-top: 53px;
   margin-left: 200px;
 }
 
@@ -537,17 +538,20 @@ a {
 .selfi {
   font-size: 50px;
   font-weight: 800;
+  margin-top: 0px;
 }
 
 .one-part .Selfi-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -40px;
+  margin-top: 0px;
+  padding-left: 0px;
 }
 
 .one-part {
   margin-left: 95px;
+  margin-bottom: 49px;
 }
 
 .main-really {
@@ -556,7 +560,6 @@ a {
   display: -ms-flexbox;
   display: flex;
   height: 1550px;
-  margin-top: 49px;
 }
 
 .first {
@@ -565,9 +568,9 @@ a {
   background-color: #dcdcdc;
   text-align: center;
   line-height: 70px;
-  margin-top: -18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin-bottom: 71px;
 }
 
 .filter {
@@ -577,15 +580,28 @@ a {
   font-family: "Raleway", sans-serif;
 }
 
-.main-section {
-  margin-left: 200px;
-  margin-top: 73px;
+.first h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.filter-price h4 {
+.main-section {
+  margin-left: 200px;
+}
+
+.characteristic {
+  margin-top: 0px;
+}
+
+.filter-price {
+  margin-bottom: 54px;
+}
+
+.costing {
   border-top: 2px solid #000000;
-  width: 120px;
+  width: 200px;
   padding-top: 10px;
+  margin-top: 0px;
 }
 
 .cost {
@@ -646,12 +662,12 @@ a {
 }
 
 .filter-color {
-  margin-top: 54px;
+  margin-bottom: 28px;
 }
 
-.filter h4 {
+.color {
   border-top: 2px solid #000000;
-  width: 170px;
+  width: 200px;
   padding-top: 10px;
   font-weight: 700;
 }
@@ -661,26 +677,21 @@ a {
 }
 
 .bluetooth {
-  margin-top: 28px;
-}
-
-.bluetooth h4 {
   border-top: 2px solid #000000;
-  width: 170px;
+  width: 200px;
   padding-top: 10px;
 }
 
-.bluetooth .right input {
+.about_bluetooth .right input {
   margin-bottom: 22px;
 }
 
-.bluetooth .right {
+.about_bluetooth .right {
   margin-bottom: 52px;
 }
 
-.bluetooth button {
+.about_bluetooth button {
   border: none;
-  margin-bottom: 60px;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
@@ -698,7 +709,6 @@ a {
 }
 
 .full-sort-gallery {
-  margin-top: 69px;
   width: 840px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,6 +729,7 @@ a {
   background-color: #ebebeb;
   height: 70px;
   padding-left: 72px;
+  margin-bottom: 69px;
 }
 
 .sort-zagolovok {
@@ -728,7 +739,7 @@ a {
   margin-right: 50px;
 }
 
-.sort-spisok select {
+.sort-list select {
   border: none;
   background-color: #ebebeb;
   padding-right: 15px;
@@ -744,6 +755,7 @@ a {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   margin-left: 72px;
+  margin-bottom: 44px;
 }
 
 .two {
@@ -845,6 +857,7 @@ a {
 
 .yet {
   margin-left: 72px;
+  margin-bottom: 51px;
   height: 55px;
   border: 2px solid #000000;
   background-color: white;
@@ -857,7 +870,6 @@ a {
           transition-duration: 150ms;
   -webkit-transition-timing-function: ease-in-out;
           transition-timing-function: ease-in-out;
-  margin-top: 44px;
 }
 
 .yet:hover {
@@ -870,7 +882,6 @@ a {
   margin-left: 72px;
   height: 70px;
   line-height: 70px;
-  margin-top: 51px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -920,7 +931,7 @@ a {
   margin-right: 15px;
 }
 
-.tochka {
+.point {
   opacity: 0.3;
   margin-right: 25px;
 }
