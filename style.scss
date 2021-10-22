@@ -130,11 +130,8 @@ a{
     margin-left: 0px;
     margin-bottom: 91px;
 }
-.sliders .slider-3{
-    position: absolute; 
-    visibility: hidden;
-}
-.sliders .slider-2{
+
+.hidden{
     position: absolute; 
     visibility: hidden;
 }
@@ -166,6 +163,7 @@ a{
     color: #444444;
     font-size: 18px;
     line-height: 30px;
+    margin: 0px;
 }
 .slider-pagination .slider-pagination-item{
     margin-right: 22px;
@@ -283,14 +281,27 @@ a{
     margin-top: 49px;
 }
 .opisanie{
-    display: flex;
-    align-items: flex-start;
+    
     background-color: #F0F0F0;
     padding-left: 140px;
     margin-left: -110px;
     margin-right: -130px;
     height: 319px;
     margin-bottom: 90px;
+}
+.delivery_guarantee_credit li:first-of-type{
+    display: flex;
+}
+.delivery_guarantee_credit li:nth-child(2){
+    display: flex;
+}
+.delivery_guarantee_credit li:last-of-type{
+    display: flex;
+}
+.delivery_guarantee_credit{
+    display: flex;
+    flex-direction: column;
+    row-gap: 250px;
 }
 .prochee{
     position: relative;
@@ -311,7 +322,7 @@ a{
     margin-bottom: 44px;
 }
 
-.cliker-3{
+.one_delivery .cliker-3{
     background-color: #000000;
     color:#FFE17F;
     width: 280px;
@@ -319,15 +330,24 @@ a{
 
 
 }
+.two_guarantee .cliker-4{
+    background-color: #000000;
+    color:#FFE17F;
+    width: 280px;
+    height: 40px;
+}
+.three_credit .cliker-5{
+    background-color: #000000;
+    color:#FFE17F;
+    width: 280px;
+    height: 40px;
+}
 .paragraph-first{
-    margin: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .paragraph-second{
-    margin: 0px;
-    font-size: 18px;
+    
     font-family: "Rubik", sans-serif;
-    line-height: 30px;
 }
 .paragraph-third{
     color: #000000;
@@ -409,9 +429,6 @@ a{
     padding-top: 40px;
 }
 .paragraph-fourth{
-    font-size: 18px;
-    font-family: "Rubik", sans-serif;
-    margin: 0px;
     margin-bottom: 30px;
 }
 .paragraph-fourth:last-of-type{
@@ -520,7 +537,6 @@ a{
     position: absolute;
     bottom: 236px;
     left: 865px;
-    font-size: 18px;
 }
 .free{
     position: absolute;
