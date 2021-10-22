@@ -97,6 +97,11 @@ a{
     justify-content: space-between;
     margin-left: 60px;
 }
+.main-nav-list li:first-of-type{
+    display: flex;
+    
+    
+}
 .main-nav-list .main-nav-item:nth-child(2){
     margin-left: 230px;
 }
@@ -361,9 +366,7 @@ a{
     text-transform: uppercase;
 }
 
-.visually-hidden{
-    visibility: hidden;
-}
+
 .promice{
     margin-left: 116px;
     margin-top: -60px;
@@ -386,7 +389,7 @@ a{
     width: 1160px;
     display: flex;
     align-items: center;
-    
+    margin-bottom: 100px;
     margin-left: 100px;
     background-color: #F0F0F0;
     width: 1160px;
@@ -417,23 +420,35 @@ a{
     margin-bottom: 86px;
 }
 .information-about-us{
+    position: relative;
     margin-right: 123px;
     max-width: 560px;
 }
-.information-about-us .title-middle{
+.line-us{
+    border-top: 7px solid #000000 ;
+    width: 70px;
+    padding-bottom: 40px;
+}
+.line-contacts{
+    border-top: 7px solid #000000 ;
+    width: 80px;
+    padding-bottom: 40px;
+}
+
+.information-about-us .title-us{
     width:170px;
     font-family: "Raleway", sans-serif;
     font-size: 50px;
     font-weight: 800;
-    border-top: 7px solid black;
-    padding-top: 40px;
+    margin-top: 0px;
 }
 .paragraph-fourth{
     margin-bottom: 30px;
 }
 .paragraph-fourth:last-of-type{
-    margin-bottom: 60px;
+    margin-bottom: 65px;
 }
+.information-about-us-company{margin-top: 0px; margin-bottom: 76px;}
 .information-about-us-company .information-about-us-company-item{
     background: url('../img/Ellipse\ 11.png') left no-repeat;
     padding-left: 26px;
@@ -449,14 +464,13 @@ a{
     margin-bottom: 77px;
     margin-top: 0px;
 }
-.contacts h2{
+.contacts .title-contacts{
     width: 130px;
     font-family: "Raleway", sans-serif;
     font-size: 50px;
     font-weight: 800;
     margin-bottom: 40px;
-    border-top: 7px solid black;
-    padding-top: 40px;
+    margin-top: 0px;
 }
 .contacts p{
     margin-bottom: 30px;
@@ -561,9 +575,16 @@ a{
     margin-left: 138px;
     margin-bottom: 35px;
 }
-.adres {
+.addres{
     color: #FFFFFF;
     margin-left: 139px;
+    margin-bottom: 66px;
+}
+.line-addres{
+    border-bottom: 7px solid #FFC700;
+    width: 80px;
+    margin-left: 140px;
+    
 }
 .footer-list {
     margin-left: 195px;
