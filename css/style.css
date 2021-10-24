@@ -74,6 +74,7 @@ body {
 
 .nav-user-item-button {
   background-color: #FFE17F;
+  padding: 5px;
   border: none;
 }
 
@@ -102,10 +103,38 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: 60px;
+  position: relative;
+}
+
+.nav-user-list .nav-user-item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+}
+
+.nav-user-list .nav-user-item {
+  position: absolute;
+}
+
+.nav-user-list .nav-user-item:first-child {
+  position: static;
+}
+
+.nav-user-list .nav-user-item:nth-child(2) {
+  left: 620px;
+}
+
+.nav-user-list .nav-user-item:nth-child(3) {
+  left: 910px;
 }
 
 .nav-user-list .nav-user-item:last-child {
-  margin-right: 59px;
+  left: 1050px;
 }
 
 .main-nav-list {
@@ -116,32 +145,62 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-left: 60px;
+  position: relative;
 }
 
-.main-nav-list li:first-of-type {
+.main-nav-list .main-nav-item {
+  position: absolute;
+}
+
+.main-nav-list .main-nav-item:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
 }
 
 .main-nav-list .main-nav-item:nth-child(2) {
-  margin-left: 230px;
+  left: 615px;
+  cursor: pointer;
+}
+
+.main-nav-list .main-nav-item:nth-child(3) {
+  left: 800px;
+  cursor: pointer;
 }
 
 .main-nav-list .main-nav-item:last-child {
-  margin-right: 59px;
+  left: 958px;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
 }
 
-.nav-user-list .nav-user-item:nth-child(2) {
-  margin-left: 280px;
+.button-plus {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  bottom: 17px;
+  left: 17px;
+  background-color: #FFE17F;
 }
 
-.nav-user-list .nav-user-item:nth-child(3) {
-  margin-left: 180px;
+.circle {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+}
+
+.plus {
+  position: absolute;
+  bottom: 15px;
+  right: 16px;
 }
 
 .search {
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .logo {
@@ -149,11 +208,11 @@ a {
 }
 
 .compare {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
-.korzina {
-  margin-right: 10px;
+.basket {
+  margin-right: 5px;
 }
 
 .main {
@@ -669,6 +728,8 @@ a {
   border-bottom: 1px solid #000000;
   width: 601px;
   background-color: #F0F0F0;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .subscribed {

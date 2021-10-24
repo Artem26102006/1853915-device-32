@@ -8,24 +8,28 @@
 
 <body>
 	<header class="page-header">
-		<div class="two_zero">01</div> <img class="logo-device" src="img/logo.svg" alt="device">
+		
+		<img class="logo-device" src="img/logo.svg" alt="device">
 		<nav class="nav-user">
 			<ul class="nav-user-list">
-				<li class="nav-user-item"> <img src="/img/search.svg" alt="search" class="search"> <input class="nav-user-item-button" type="text" name="poisk" placeholder="Поиск по сайту"> </li>
+				<li class="nav-user-item"> 
+					<img src="/img/search.svg" alt="search" class="search"> 
+					<input class="nav-user-item-button" type="text" name="poisk" placeholder="Поиск по сайту"> 
+				</li>
 				<li class="nav-user-item"> <img src="img/user.svg" class="logo" alt="logo"> <a href="#">Войти</a> </li>
 				<li class="nav-user-item"> <img src="img/compare.svg" alt="compare" class="compare"> <a href="#">Сравнить</a> </li>
-				<li class="nav-user-item"> <img src="img/cart.svg" alt="korzina" class="korzina"> <a href="korzina.html">Корзина</a> </li>
+				<li class="nav-user-item"> <img src="img/cart.svg" alt="basket" class="basket"> <a href="#">Корзина</a> </li>
 			</ul>
 		</nav>
 		<nav class="main-nav">
 			<ul class="main-nav-list">
 				<li class="main-nav-item">
 					<a href="#">Каталог товаров</a>
-					<button style="width: 50px;height: 50px; position: relative; cursor: pointer; border: none; bottom: 17px; left: 17px; background-color: #FFE17F;">
-						<div>
-							<img src="img/Ellipse 2.svg" alt="#" style="position: absolute; bottom:-1px; right: -1px;">
-							<img src="img/plus 1.svg" alt="#" style="position: absolute; bottom: 15px; right: 16px;">
-						</div>
+					<button class="button-plus">
+						<span>
+							<img class="circle" src="img/Ellipse 2.svg" alt="#">
+							<img class="plus" src="img/plus 1.svg" alt="#">
+						</span>
 					</button>
 				</li>
 				<li class="main-nav-item"><a href="#">Доставка</a></li>
@@ -33,6 +37,7 @@
 				<li class="main-nav-item"><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
+		<div class="two_zero">01</div> 
 	</header>
 	<main class="main">
 		<section class="sliders">
@@ -50,7 +55,7 @@
 			  
 				  <div class="infa">
 					<h2 class="title-middle title-middle-first">Порхает как бабочка,
-								  жалит как пчела!</h2>
+						жалит как пчела!</h2>
 					<p class="paragraph paragraph-first">
 					  Этот обычный, на первый взгляд, квадрокоптер оснащен
 					  <br> мощным лазером, замаскированным под стандартную камеру.
@@ -247,7 +252,7 @@
 			<p class="paragraph paragraph-third">Доставим редкий товар под заказ</p> <button class="info-lorry"><img src="img/info.png" alt="info"></button> 
 		</aside>
 		<section class="information">
-			
+			<h2 class="hidden">Информация</h2>
 			<div class="first">
 				<div class="information-about-us">
 					<h2 class="hidden">Информация о нас</h2>
@@ -263,6 +268,7 @@
 					<div class="cliker cliker-podrobnee-1"> <a href="#">Подробнее о нас</a> </div>
 				</div>
 				<div class="contacts">
+					
 					<h2 class="hidden">Контакты</h2>
 					<div class="line-contacts"></div>
 					<h2 class="title-middle title-contacts">Контакты</h2>
@@ -270,20 +276,34 @@
 					<h3>Интернет-магазин «Девайс»</h3> 
 					<address class="Petesberg">
               			<p class="paragraph-five">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-              			<a href="tel:88128121212" name="phone" >+7(812)812-12-12</a>
+              			<a href="tel:88128121212" id="phone" >+7(812)812-12-12</a>
             		</address>
 					<h3 class="h3">Время работы</h3>
 					<ul class="contacts-time">
 						<li class="contacts-time-item">пн—пт: с 10:00 до 22:00</li>
 						<li class="contacts-time-item">сб—вс: с 10:00 до 19:00</li>
 					</ul>
-					<div class="cliker cliker-podrobnee-2"> <a href="#">Напишите нам</a> </div>
+				
+					<div class="cliker cliker-podrobnee-2"> 
+						<a href="#">Напишите нам</a> 
+					</div>
+
 				</div>
 			</div>
 			<aside class="subscribe">
 				<h2 class="title-middle">Подпишитесь<br> на рассылку</h2>
-				<div> <input type="text" name="e-mail" placeholder="Ваш e-mail" required> <button type="button" class="subscribed">Подписаться</button> </div>
-				<p class="paragraph paragraph-six"> Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё. </p> <span class="free">Это бесплатно</span> </aside>
+				<form class="form" action="https://echo.htmlacademy.ru"> 
+					<div>						
+						<input type="text" name="e-mail" placeholder="Ваш e-mail" required> 
+						<button type="button" class="subscribed">Подписаться</button>
+					</div> 
+				</form>
+				
+					<p class="paragraph paragraph-six"> Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё. </p> 
+					<div class="free">Это бесплатно</div>
+			
+			</aside>
+			
 		</section>
 	</main>
 	<footer class="footer">
