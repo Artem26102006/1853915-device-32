@@ -41,6 +41,8 @@ body {
   width: 1260px;
   margin: 0 auto;
   margin-top: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .page-header {
@@ -93,6 +95,7 @@ a {
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 3px;
+  font-family: "Rubik", sans-serif;
 }
 
 .nav-user-list {
@@ -135,6 +138,19 @@ a {
 
 .nav-user-list .nav-user-item:last-child {
   left: 1050px;
+}
+
+.in_the_basket {
+  position: absolute;
+  background-color: #F0F0F0;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  right: 80px;
+  text-align: center;
+  line-height: 21px;
+  bottom: 0px;
+  font-size: 14px;
 }
 
 .main-nav-list {
@@ -353,16 +369,19 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 300px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
 }
 
 .goods figure {
   background-color: #FFE17F;
-  min-width: 160px;
+  width: 160px;
   height: 160px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  margin-right: 15px;
+  margin-right: 0px;
+  margin-left: 20px;
 }
 
 .one {
@@ -392,7 +411,8 @@ a {
 }
 
 .img-1 {
-  margin-left: 32px;
+  margin-right: 0px;
+  margin-left: 30px;
   margin-top: 53px;
 }
 
@@ -842,20 +862,5 @@ a {
 
 .logo-2 {
   margin-left: 200px;
-}
-
-.slider-pagination-item button {
-  border: 1px solid #000000;
-  border-radius: 100%;
-  width: 12px;
-  height: 12px;
-}
-
-.slider-pagination-item .slider-pagination-button-1 {
-  border: 1px solid #000000;
-  border-radius: 100%;
-  width: 12px;
-  height: 12px;
-  background-color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
