@@ -162,6 +162,8 @@ a {
           justify-content: space-between;
   margin-left: 60px;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-nav-list .main-nav-item {
@@ -365,12 +367,14 @@ a {
 }
 
 .goods {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (160px)[6];
+      grid-template-columns: repeat(6, 160px);
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
   margin-bottom: 300px;
-  -webkit-column-gap: 40px;
-          column-gap: 40px;
+  margin-left: 20px;
 }
 
 .goods figure {
@@ -380,34 +384,36 @@ a {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  margin-right: 0px;
-  margin-left: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .one {
-  margin-top: 110px;
+  padding-top: 110px;
 }
 
 .two {
-  margin-top: 56px;
+  padding-top: 56px;
 }
 
 .three {
-  margin-top: 90px;
+  padding-top: 90px;
 }
 
 .four {
-  margin-top: 97px;
+  padding-top: 97px;
   width: 180px;
 }
 
 .five {
-  margin-top: 83px;
-  margin-left: 10px;
+  padding-top: 83px;
+  padding-left: 10px;
 }
 
 .six {
-  margin-top: 92px;
+  padding-top: 92px;
 }
 
 .img-1 {
@@ -566,7 +572,6 @@ a {
 }
 
 .bonus {
-  width: 1160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,10 +579,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 100px;
-  margin-left: 100px;
+  margin-left: 20px;
   background-color: #F0F0F0;
-  width: 1160px;
   height: 100px;
+  width: 1260px;
 }
 
 .bonus .lorry {
@@ -608,13 +613,18 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-left: 120px;
+  margin-left: 25px;
   margin-bottom: 86px;
 }
 
 .information-about-us {
   position: relative;
-  margin-right: 123px;
+  margin-right: 205px;
+  max-width: 560px;
+}
+
+.contacts {
+  position: relative;
   max-width: 560px;
 }
 
@@ -685,12 +695,6 @@ a {
   margin-top: 0px;
 }
 
-.contacts h3 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-top: 0px;
-}
-
 .Petesberg p {
   font-size: 18px;
   font-weight: 400;
@@ -704,6 +708,7 @@ a {
 .contacts .h3 {
   font-size: 24px;
   font-weight: 700;
+  margin-top: 0px;
 }
 
 .contacts-time {
