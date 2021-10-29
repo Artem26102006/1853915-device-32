@@ -52,8 +52,18 @@ body {
 	height: 186px;
 	padding-bottom: 23px;
 }
-
-
+.in_the_basket{
+    position: absolute;
+    background-color: #F0F0F0;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    right: 85px;
+    text-align: center;
+    line-height: 21px;
+    bottom: 0px;
+    font-size: 14px; 
+}
 
 
 
@@ -81,6 +91,8 @@ body {
 	border: none;
 	opacity: 0.3;
 	transition-duration: 250ms;
+	padding: 5px;
+	font-size: 16px;
 }
 
 .nav-user-item-button:hover {
@@ -93,7 +105,7 @@ body {
 	background-color: #ffe17f;
 	opacity: 0.3;
 	transition-duration: 250ms;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 .leave:hover {
@@ -125,6 +137,10 @@ a {
 	height: 20px;
 	margin-bottom: 54px;
 }
+.nav-user-item a:hover{
+	color: #3f3f3f;
+}
+
 .nav-user-list .nav-user-item:first-child{
     display: flex;
     align-items: stretch;
@@ -180,6 +196,7 @@ a {
     cursor: pointer;
     
 }
+
 .button-plus{
     width: 50px;
     height: 50px;
@@ -204,7 +221,8 @@ a {
 
 
 .search {
-	margin-right: 20px;
+	margin-right: 15px;
+	margin-bottom: 3px;
 }
 
 .logo {
@@ -215,8 +233,8 @@ a {
 	margin-right: 10px;
 }
 
-.korzina {
-	margin-right: 10px;
+.basket{
+    margin-right: 10px;
 }
 
 .selfi {
@@ -430,13 +448,55 @@ a {
 	
 }
 
+.hover-content{
+	display: none;
+
+}
+
+.new {
+	position: absolute;
+	bottom: 367px;
+	left: 273px;
+	display: none;
+	
+}
+.one-hover:hover .hover-content{
+	position: absolute;
+    top: 180px;
+    left: 70px;
+    display: block;
+}
+.four-hover:hover .new{
+	display: block;
+}
+.two-hover:hover .hover-content{
+	position: absolute;
+    top: 180px;
+    left: 70px;
+    display: block;
+}
+
+.three-hover:hover .hover-content{
+	position: absolute;
+    top: 180px;
+    left: 70px;
+    display: block;
+}
+.four-hover:hover .hover-content{
+	position: absolute;
+    top: 180px;
+    left: 70px;
+    display: block;
+}
 .two {
 	margin: 0px;
+	position: relative;
 }
 
 .photo-2 {
 	transition-duration: 300ms;
 }
+
 
 .one {
 	margin: 0px;
@@ -444,11 +504,18 @@ a {
 
 .three {
 	margin: 0px;
+	position: relative;
 }
 
 .four {
 	margin: 0px;
 	position: relative;
+}
+.photo-1{
+	transition-duration: 300ms;
+}
+.photo-1:hover{
+	opacity: 0.3;
 }
 
 .photo-2:hover {
@@ -569,12 +636,7 @@ a {
 	opacity: 0.3;
 }
 
-.new {
-	position: absolute;
-	bottom: 367px;
-	left: 273px;
-	opacity: 0.7;
-}
+
 
 .strelka-1 {
 	margin-left: 15px;
