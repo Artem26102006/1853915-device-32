@@ -30,6 +30,10 @@
   font-display: swap;
 }
 
+button {
+  border: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -75,9 +79,16 @@ body {
 }
 
 .nav-user-item-button {
-  background-color: #FFE17F;
-  padding: 5px;
+  background-color: #ffe17f;
   border: none;
+  opacity: 30%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.nav-user-item-button:hover {
+  opacity: 0.8;
+  border-bottom: 2px solid #000000;
 }
 
 .logo-device {
@@ -112,6 +123,39 @@ a {
           box-sizing: border-box;
 }
 
+.sike {
+  opacity: 0.3;
+  position: relative;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: 2px solid #000000;
+  padding: 5px;
+  border-radius: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  right: 6px;
+  border-top-left-radius: 0px 0px;
+  border-bottom-left-radius: 0px 0px;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  cursor: pointer;
+}
+
+.sike:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.sike:active {
+  color: #332e2e;
+  background-color: #000000;
+  -webkit-transition-duration: 50ms;
+          transition-duration: 50ms;
+  opacity: 1;
+}
+
 .subcatalog li {
   font-size: 16px;
   font-weight: 400;
@@ -119,15 +163,9 @@ a {
   cursor: pointer;
 }
 
-.button-plus:hover {
-  opacity: 0.5;
-}
-
-.main-nav-item:hover .subcatalog {
+.catalog-item:hover .subcatalog {
   display: block;
-  position: absolute;
-  top: 50px;
-  left: -40px;
+  position: relative;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "virt gym kvadra" "mono smart ." "camers . .";
@@ -135,11 +173,255 @@ a {
   z-index: 4;
 }
 
-.main-nav-item:focus-within .subcatalog {
-  display: block;
+.circle-1 {
+  width: 45px;
+  height: 45px;
   position: absolute;
-  top: 50px;
-  left: -40px;
+  bottom: 1px;
+  right: 1px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.line-minus {
+  width: 16px;
+  border-top: 2px solid #000000;
+  position: relative;
+  top: 0px;
+  left: 10px;
+  display: none;
+}
+
+.button-plus:hover .line-minus {
+  display: block;
+}
+
+.button-plus:hover .plus-1 {
+  display: none;
+}
+
+.button-plus:hover .plus-2 {
+  display: none;
+}
+
+.button-plus:hover .circle {
+  display: none;
+}
+
+.button-plus:focus .line-minus {
+  display: block;
+}
+
+.button-plus:active .line-minus {
+  opacity: 30%;
+}
+
+.button-plus:active {
+  opacity: 35%;
+}
+
+.button-plus:focus .plus-1 {
+  display: none;
+}
+
+.button-plus:focus .plus-2 {
+  display: none;
+}
+
+.button-plus:focus .circle {
+  display: none;
+}
+
+.basket-catalog {
+  position: relative;
+  width: 320px;
+  height: 302px;
+  background-color: #000000;
+  z-index: 2;
+  right: 145px;
+  top: 13px;
+}
+
+.catalog-products {
+  padding-left: 0px;
+}
+
+.catalog-products .catalog-products-item-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.catalog-products .catalog-products-item-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.catalog-products-item-1 {
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.catalog-products-item-2 {
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.picture-product-1 {
+  margin-right: 23px;
+}
+
+.describe-picture-1 {
+  width: 180px;
+  margin-right: 25px;
+}
+
+.cross {
+  margin-bottom: 15px;
+}
+
+.quantity_amount .meaning {
+  margin-left: 0px;
+}
+
+.quantity_amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  background-color: #1A1A1A;
+}
+
+.quantity_amount .quantity_amount-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.quantity_amount-item-1 {
+  width: 120px;
+}
+
+.quantity_amount-item-2 {
+  width: 90px;
+  padding-left: 60px;
+}
+
+.button-catalog {
+  cursor: pointer;
+  border: none;
+  background-color: #FFFFFF;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: 280px;
+  margin: 20px;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.button-catalog:hover {
+  background-color: #FFE17F;
+}
+
+.button-catalog:active {
+  background-color: #FFE17F;
+  opacity: 60%;
+}
+
+.cliker {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  width: 160px;
+  padding: 8px 20px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: middle;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  background: none;
+  border: none;
+}
+
+.cliker::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #f0c52e;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-property: transform,-webkit-transform;
+}
+
+.cliker:hover::before {
+  -webkit-transform: scaleY(5);
+          transform: scaleY(5);
+}
+
+.cliker-3, .cliker-4, .cliker-5 {
+  width: 175px;
+}
+
+.cliker-3:active::before {
+  width: 280px;
+  background-color: #000000;
+}
+
+.cliker-3:active {
+  color: #FFE17F;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.cliker-4:active::before {
+  width: 280px;
+  background-color: #000000;
+}
+
+.cliker-4:active {
+  color: #FFE17F;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.cliker-5:active::before {
+  width: 280px;
+  background-color: #000000;
+}
+
+.cliker-5:active {
+  color: #FFE17F;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.catalog-button {
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.catalog-item:focus-within .subcatalog {
+  display: block;
+  position: relative;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "virt gym kvadra" "mono smart ." "camers . .";
@@ -149,6 +431,17 @@ a {
 
 .subcatalog {
   display: none;
+  position: relative;
+  left: -290px;
+  top: 0;
+}
+
+.subcatalog .subcatalog-item:hover {
+  opacity: 60%;
+}
+
+.subcatalog .subcatalog-item:active {
+  opacity: 30%;
 }
 
 .subcatalog li:first-child {
@@ -193,21 +486,19 @@ a {
   border: 2px solid #AF4FFF;
   border-radius: 20px;
   padding: 5px;
-}
-
-.main-nav-item {
-  padding-bottom: 5px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  height: 21px;
 }
 
 .main-nav-item:hover {
+  padding-bottom: 8px;
   border-bottom: 2px solid black;
 }
 
-.main-nav-item:first-child {
+.main-nav-item:first-child:hover {
   border: none;
   padding: 0px;
+  border-bottom: 2px solid black;
+  padding-bottom: 8px;
 }
 
 .nav-user-list .nav-user-item:first-child {
@@ -271,6 +562,8 @@ a {
   line-height: 21px;
   bottom: 0px;
   font-size: 14px;
+  bottom: 303px;
+  left: -15px;
 }
 
 .main-nav-list {
@@ -290,19 +583,24 @@ a {
   position: absolute;
 }
 
-.main-nav-list .main-nav-item:first-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
+.main-nav-item:active {
+  opacity: 30%;
+  border: none;
 }
 
 .main-nav-list .main-nav-item:nth-child(2) {
+  left: 290px;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.main-nav-list .main-nav-item:nth-child(3) {
   left: 615px;
   cursor: pointer;
 }
 
-.main-nav-list .main-nav-item:nth-child(3) {
+.main-nav-list .main-nav-item:nth-child(4) {
   left: 800px;
   cursor: pointer;
 }
@@ -327,14 +625,30 @@ a {
 
 .circle {
   position: absolute;
-  bottom: -1px;
-  right: -1px;
+  bottom: 1px;
+  right: 1px;
+  border: 2px solid #000000;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
-.plus {
-  position: absolute;
-  bottom: 15px;
-  right: 16px;
+.plus-1 {
+  position: relative;
+  width: 18px;
+  border-top: 2px solid black;
+  left: 9px;
+  top: 1px;
+}
+
+.plus-2 {
+  position: relative;
+  width: 17px;
+  border-top: 2px solid black;
+  left: 9px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  bottom: 2px;
 }
 
 .search {
@@ -382,7 +696,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 75px;
 }
 
 .slider-pagination-item {
@@ -418,7 +732,7 @@ a {
   margin: 0px;
 }
 
-.slider-pagination-item button {
+.slider-pagination-item .slider-pagination-button {
   width: 12px;
   height: 12px;
   margin: 0;
@@ -429,8 +743,12 @@ a {
   cursor: pointer;
 }
 
-.slider-pagination-item button:hover {
-  background-color: #000000;
+.slider-pagination-item .slider-pagination-button:hover {
+  opacity: 60%;
+}
+
+.slider-pagination-item .slider-pagination-button:active {
+  opacity: 30%;
 }
 
 .slider-button-left {
@@ -493,28 +811,23 @@ a {
   opacity: 0.6;
 }
 
-.cliker {
-  font-weight: 800;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #FFE17F;
+.cliker-podrobnee:active {
+  opacity: 30%;
+}
+
+.cliker-podrobnee-1 {
+  position: absolute;
+}
+
+.cliker-podrobnee-2 {
+  position: absolute;
   width: 220px;
-  height: 8px;
-  line-height: 8px;
-  letter-spacing: 0.2em;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
 }
 
-.cliker-podrobnee-1:hover {
-  height: 50px;
-  line-height: 50px;
-}
-
-.cliker-podrobnee-2:hover {
-  height: 50px;
-  line-height: 50px;
+.cliker-button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 10px;
 }
 
 .cliker-podrobnee-1:active {
@@ -530,7 +843,7 @@ a {
 }
 
 .cliker-podrobnee {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .cliker-podrobnee-1 {
@@ -669,8 +982,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -5px;
+  margin-top: -20px;
   margin-right: 70px;
+  row-gap: 70px;
 }
 
 .line {
@@ -679,53 +993,6 @@ a {
   border-left: 7px solid #000000;
   left: 319px;
   top: -80px;
-}
-
-.cliker-3, .cliker-4, .cliker-5 {
-  border: none;
-  margin-bottom: 44px;
-}
-
-.cliker-3:hover {
-  height: 40px;
-  line-height: 40px;
-}
-
-.cliker-4:hover {
-  height: 40px;
-  line-height: 40px;
-}
-
-.cliker-5:hover {
-  height: 40px;
-  line-height: 40px;
-}
-
-.cliker-3:active {
-  background-color: #000000;
-  color: #FFE17F;
-  width: 280px;
-  height: 40px;
-  -webkit-transition-duration: 150ms;
-          transition-duration: 150ms;
-}
-
-.cliker-4:active {
-  background-color: #000000;
-  color: #FFE17F;
-  width: 280px;
-  height: 40px;
-  -webkit-transition-duration: 150ms;
-          transition-duration: 150ms;
-}
-
-.cliker-5:active {
-  background-color: #000000;
-  color: #FFE17F;
-  width: 280px;
-  height: 40px;
-  -webkit-transition-duration: 150ms;
-          transition-duration: 150ms;
 }
 
 .two_guarantee .cliker-4 {
@@ -763,7 +1030,7 @@ a {
 }
 
 .promice {
-  margin-left: 116px;
+  left: 350px;
   top: -60px;
   position: relative;
 }

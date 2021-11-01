@@ -13,40 +13,84 @@
 		<nav class="nav-user">
 			<ul class="nav-user-list">
 				<li class="nav-user-item"> 
-					<img src="/img/search.svg" alt="search" class="search"> 
-					<input class="nav-user-item-button" type="text" name="poisk" placeholder="Поиск по сайту"> 
+					<img src="img/search.svg" alt="search" class="search"> 
+					<input class="nav-user-item-button" type="text" name="poisk" placeholder="Поиск по сайту"><div class="sike hidden">Найти</div>
+
 				</li>
 				<li class="nav-user-item"> <img src="img/user.svg" class="logo" alt="logo"> <a href="#">Войти</a> </li>
 				<li class="nav-user-item"> <img src="img/compare.svg" alt="compare" class="compare"> <a href="#">Сравнить</a> </li>
 				<li class="nav-user-item"> 
 					<div class="in_the_basket">2</div>
-					<img src="img/cart.svg" alt="basket" class="basket"> 
-					<a href="#">Корзина</a>
+					<img src="img/cart.svg" alt="basket" class="basket">
+					<a class="basket-button" href="#">Корзина</a>
+					<div class="basket-catalog" style="position: relative; z-index: 4;">
+						<ul class="catalog-products">
+							<li class="catalog-products-item-1">
+								<img class="picture-product-1" src="img/product-1-small.png">
+								<span class="describe-picture-1" style="color: white;">Любительская<br> селфи-палка</span>
+								<button class="catalog-button">
+									<img class="cross" src="img/cross.svg" width="13px" height="13px">
+								</button>
+							</li>
+							<li class="catalog-products-item-2">
+								<img class="picture-product-1" src="img/product-2-small.png">
+								<span class="describe-picture-1" style="color: white;">Профессиональная<br> селфи-палка</span>
+								<button class="catalog-button">
+									<img class="cross" src="img/cross.svg" width="13px" height="13px">
+								</button>
+							</li>
+						</ul>
+						<dl class="quantity_amount" style="color:white">
+							<div class="quantity_amount-item quantity_amount-item-1">
+								<dt>Товары:</dt>
+								<dd class="meaning">2</dd>
+							</div>
+							<div class="quantity_amount-item quantity_amount-item-2">
+								<dt>Сумма:</dt>
+								<dd class="meaning">2000</dd>
+							</div>
+						</dl>
+						<button class="button-catalog">
+							Открыть Корзину
+						</button>
+					</div>
 				 </li>
 			</ul>
 		</nav>
 		<nav class="main-nav">
 			<ul class="main-nav-list">
+
 				<li class="main-nav-item">
 					<a href="#">Каталог товаров</a>
+				</li>
+
+				<li class="main-nav-item catalog-item">
 					<button class="button-plus">
-						<span>
-							<img class="circle" src="img/Ellipse 2.svg" alt="#">
-							<img class="plus" src="img/plus 1.svg" alt="#">
-						</span>
+						<div>
+							<div class="circle"></div>
+							<div class="plus-1"></div>
+							<div class="plus-2"></div>
+							<div class="circle-1"></div>
+							<div class="line-minus"></div>
+						</div>
 					</button>
 					<ul class="subcatalog">
-						<li><a href="#">Виртуальная реальность</a></li>
-						<li><a href="#">Фитнес-браслеты</a></li>
-						<li><a href="#">Квадракоптеры</a></li>
-						<li><a href="#">Моноподы для селфи</a></li>
-						<li><a href="#">Умные часы</a></li>
-						<li><a href="#">Экшен-камеры</a></li>
+						<li class="subcatalog-item"><a href="#">Виртуальная реальность</a></li>
+						<li class="subcatalog-item"><a href="#">Фитнес-браслеты</a></li>
+						<li class="subcatalog-item"><a href="#">Квадракоптеры</a></li>
+						<li class="subcatalog-item"><a href="#">Моноподы для селфи</a></li>
+						<li class="subcatalog-item"><a href="#">Умные часы</a></li>
+						<li class="subcatalog-item"><a href="#">Экшен-камеры</a></li>
 					</ul>
 				</li>
+
+				</li>
 				<li class="main-nav-item"><a href="#">Доставка</a></li>
+
 				<li class="main-nav-item"><a href="#">Гарантия</a></li>
+
 				<li class="main-nav-item"><a href="#">Контакты</a></li>
+
 			</ul>
 		</nav>
 		<div class="two_zero">01</div> 
@@ -74,16 +118,16 @@
 						  <br> мощным лазером, замаскированным под стандартную камеру.
 					   </p>
 					   <div class="container-flex">
-						  <a class="cliker cliker-podrobnee" href="#">Подробнее</a>
+						  <div class="cliker-button"><a class="cliker cliker-podrobnee" href="#">Подробнее</a></div>
 						  <ul class="slider-pagination">
 							 <li class="slider-pagination-item">
-								<button></button>
+								<button class="slider-pagination-button"></button>
 							 </li>
 							 <li class="slider-pagination-item">
-								<button></button>
+								<button class="slider-pagination-button"></button>
 							 </li>
 							 <li class="slider-pagination-item">
-								<button></button>
+								<button class="slider-pagination-button"></button>
 							 </li>
 						  </ul>
 					   </div>
@@ -116,16 +160,16 @@
 						  <br> не пропускать занятия и соблюдать диету.
 					   </p>
 					   <div class="container-flex">
-						  <a class="cliker cliker-podrobnee" href="#">Подробнее</a>
+					   	  <div class="cliker-button"><a class="cliker cliker-podrobnee" href="#">Подробнее</a></div>
 						  <ul class="slider-pagination">
 							 <li class="slider-pagination-item">
-								<button></button>
+								<button class="slider-pagination-button"></button>
 							 </li>
 							 <li class="slider-pagination-item">
-								<button></button>
+								<button class="slider-pagination-button"></button>
 							 </li>
 							 <li class="slider-pagination-item">
-								<button></button>
+								<button class="slider-pagination-button"></button>
 							 </li>
 						  </ul>
 					   </div>
@@ -153,16 +197,16 @@
 						Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
 					  </p>
 					  <div class="container-flex">
-						<a class="cliker cliker-podrobnee" href="#">Подробнее</a>
+						<div class="cliker-button"><a class="cliker cliker-podrobnee" href="#">Подробнее</a></div>
 						<ul class="slider-pagination">
 						  <li class="slider-pagination-item">
-							<button></button>
+							<button class="slider-pagination-button"></button>
 						  </li>
 						  <li class="slider-pagination-item">
-							<button></button>
+							<button class="slider-pagination-button"></button>
 						  </li>
 						  <li class="slider-pagination-item">
-							<button></button>
+							<button class="slider-pagination-button"></button>
 						  </li>
 						</ul>
 					  </div>

@@ -14,8 +14,9 @@
 		<nav class="nav-user">
 			<ul class="nav-user-list" >
 				<li class="nav-user-item"> 
-					<img src="/img/search.svg" alt="search" class="search"> 
-					<input class="nav-user-item-button" type="text" name="poisk" placeholder="Поиск по сайту"> 
+					<img src="img/search.svg" alt="search" class="search"> 
+					<input class="nav-user-item-button" type="text" name="poisk" placeholder="Поиск по сайту"><div class="sike">Найти</div>
+
 				</li>
 				<li class="nav-user-item nav-user-leave"> 
 					<img src="img/user.svg" class="logo" alt="logo"> 
@@ -49,40 +50,84 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="one-part">
+	
+	<section class="one-part">
 		<h2 class="selfi"> Моноподы для селфи </h2>
 		<ul class="Selfi-list">
-			<li class="Selfi-list-item">Главаня</li>
+			<li class="Selfi-list-item"><button>Главаня</button></li>
 			<li><img class="strelka-1" src="img/strelka.svg" alt="right"></li>
-			<li class="Selfi-list-item">Каталог</li>
+			<li class="Selfi-list-item"><button>Каталог</button></li>
 			<li><img class="strelka-2" src="img/strelka.svg" alt="left"></li>
-			<li class="Selfi-list-item">Моноподы для селфи</li>
+			<li class="Selfi-list-item"><button>Моноподы для селфи</button></li>
 		</ul>
-	</div>
+	</section>
 	<main class="main-really">
 		<section class="filter">
 			<div class="first">
 				<h3 style="font-weight: 800;">Фильтр:</h3>
 			</div>
-			<div class="main-section">
-				<div class="filter-price">
-				   <h4 class="characteristic costing">Стоимость</h4>
-				   <div class="cost"> <span></span> <span>от 0</span> <span></span> <span></span> <span>до 5000</span> <span></span> </div>
-				</div>
-				<div class="filter-color">
-				   <h4 class="characteristic color">Цвет</h4>
-				   <div class="colors"> <input type="checkbox" name="black" value="Black" checked>Черный <br>
-					 <input type="checkbox" name="white" value="White" checked>Белый <br> 
-					 <input type="checkbox" name="blue" value="Blue">Синий <br> 
-					 <input type="checkbox" name="red" value="Red">Красный <br> 
-					 <input type="checkbox" name="pink" value="Pink">Розовый  </div>
-				</div>
-				<div class="about_bluetooth">
-				   <h4 class="characteristic bluetooth">Bluetooth</h4>
-				   <div class="right"> <input type="radio" name="yes" value="ThereIs">Есть <br> <input type="radio" name="no" value="NoThereIs">Нет </div>
+			<form class="main-section" action="https://echo.htmlacademy.ru/" method="get">
+				
+				<fieldset class="filter-price" style="border: none;">
+				   <legend class="characteristic costing" >Стоимость</legend>
+					<div class="cost"> 
+						<div class="range">
+							<button class="button-min"></button>
+							<button class="button-max"></button>
+							<div class="line-cost"></div>
+							<div class="line-cost-2"></div>
+						</div>
+						<div class="inputs">
+							от<input class="range-input" name="min-price" value="0" type="number">
+							до<input class="range-input" name="max-price" value="5000" type="number">
+						</div>
+					</div>
+					
+				</fieldset>
+
+				<fieldset class="filter-color">
+				   <legend class="characteristic color">Цвет</legend>
+				   <ul class="colors">
+					<li>
+					   <label class="control">
+					   <input class="hidden control-input" type="checkbox" name="black" value="Black" checked><span class="control-mark"></span>Черный
+					   </label>
+					</li>
+					<br>
+					<li>
+					   <label class="control">
+					   <input class="hidden control-input" type="checkbox" name="black" value="White" checked><span class="control-mark"></span>Белый
+					   </label>
+					</li>
+					<br> 
+					<li>
+					   <label class="control">
+					   <input class="hidden control-input" type="checkbox" name="black" value="Blue" ><span class="control-mark"></span>Синий
+					   </label>
+					</li>
+					<br>
+					<li>
+					   <label class="control">
+					   <input class="hidden control-input" type="checkbox" name="black" value="Red" ><span class="control-mark"></span>Красный
+					   </label>
+					</li>
+					<br> 
+					<li>
+					   <label class="control">
+					   <input class="hidden control-input" type="checkbox" name="black" value="Pink"><span class="control-mark"></span>Розовый
+					   </label>
+					</li>
+					<br>
+				 </ul>
+				</fieldset>
+				<fieldset class="about_bluetooth">
+				   <legend class="characteristic bluetooth">Bluetooth</legend>
+				   <div class="right"> 
+					   <input type="radio" name="yes" value="ThereIs">Есть <br> 
+					   <input type="radio" name="no" value="NoThereIs">Нет </div>
 				   <button class="button">Показать</button> 
-				</div>
-			 </div>
+				</fieldset>
+			</form>
 		</section>
 		<section class="sort">
 			<div class="sortirovka">
@@ -106,7 +151,7 @@
 
 					<figure class="two"> 
 						<div class="two-hover">
-							<img class="photo-2" src="img/catalog/product-2.jpg" alt="Профессиональная селфи-палка ">
+							<img class="photo-2" src="img/catalog/product-2.jpg" alt="Профессиональная селфи-палка">
 							<button class="hover-content button">Подробнее</button>
 						</div>
 						<figcaption class="gallery-block-2">
@@ -142,13 +187,13 @@
 					  <button class="back_next-button back_next-button-1">
 						<span class="visually-hidden">Назад</span>
 					  </button>
-					  <div class="numbers-main">
-						<button class="button-number"><span>1</span></button>
-						<button class="button-number"><span>2</span></button>
-						<button class="button-number"><span>3</span></button> 
-						<span class="point">...</span>
-						<button class="button-number"><span>15</span></button>
-					  </div>
+					  <ul class="numbers-main">
+						<li class="numbers-main-item"><button class="button-number"><span>1</span></button></li>
+						<li class="numbers-main-item"><button class="button-number"><span>2</span></button></li>
+						<li class="numbers-main-item"><button class="button-number"><span>3</span></button></li>
+						<li class="numbers-main-item"><span class="point">...</span></li>
+						<li class="numbers-main-item"><button class="button-number"><span>15</span></button></li>
+					  </ul>
 					  <button class="back_next-button back_next-button-2">
 						<span class="visually-hidden">Вперёд</span>
 					  </button>
