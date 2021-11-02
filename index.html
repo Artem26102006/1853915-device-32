@@ -23,7 +23,7 @@
 					<div class="in_the_basket">2</div>
 					<img src="img/cart.svg" alt="basket" class="basket">
 					<a class="basket-button" href="#">Корзина</a>
-					<div class="basket-catalog" style="position: relative; z-index: 4;">
+					<div class="basket-catalog">
 						<ul class="catalog-products">
 							<li class="catalog-products-item-1">
 								<img class="picture-product-1" src="img/product-1-small.png">
@@ -298,16 +298,64 @@
 				</li>
 
 			</ul>
-
-
 		</section>
+		<div class="wrapper">
+			<div class="popup">
+				<div class="heading">
+					<h2 class="delivery-popup">Доставка под заказ</h2>
+					<img src="img/cross-black.svg" class="cross-heading"> 
+				</div>
+				<div class="main-popup">
+					<form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+						<div class="grid-popup">
+							<p class="field-group appointment-form-date" style="position: relative;">
+								<label class="form-label" for="appointment-date">
+									Ваше имя:
+								</label>
+								<input class="input-name" type="text" id="appointment-date" name="appointment-date" placeholder="Имя Фамилия" required>
 
-		<aside class="bonus">
-			<div class="lorry">
-				<img src="img/Group.svg" alt="lorry">
+							</p>
+
+							<p class="field-group appointment-form-time">
+								<label class="form-label" for="appointment-time">
+									Ваш e-mail:
+								</label>
+								<input class="input-email" type="email" id="appointment-time" name="appointment-time" placeholder="krasotka92@mail.ru" required>
+							</p>
+
+							<p class="field-group appointment-form-delivery">
+								<label class="form-label" for="appointment-phone">
+									Что нужно привезти:
+								</label>
+								<input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="В свободной форме" required>
+							</p>
+
+							<p class="field-group appointment-form-name">
+								<label class="kol" for="kol-popup">Количество:</label>
+								<div class="block">
+									<div class="minus-popup"></div>
+									<div class="number-popup">1</div>
+									<img src="img/cross-popup (1).svg" class="cross-popup">
+								</div>
+							</p>
+						</div>
+						<button class="button appointment-submit" type="submit">Отправить</button>
+
+					</form>
+				</div>
 			</div>
-			<p class="paragraph paragraph-third">Доставим редкий товар под заказ</p> <button class="info-lorry"><img src="img/info.png" alt="info"></button> 
-		</aside>
+		</div>
+		<div class="bonus-block"> 
+			<a class="bonus">
+				<div class="lorry">
+					<img src="img/Group.svg" alt="lorry">
+				</div>
+				<p class="paragraph paragraph-third">Доставим редкий товар под заказ</p> 
+				<button class="info-lorry">
+					<img src="img/info.png" alt="info" class="info_Lorry">
+				</button> 
+			</a>
+		</div>
 		<section class="information">
 			<h2 class="hidden">Информация</h2>
 			<div class="first">
@@ -374,9 +422,9 @@
 		</div>
 		<div>
 			<ul class="footer-list">
-				<li class="footer-list-item"><a href="#">Доставка</a></li>
-				<li class="footer-list-item"><a href="#">Гарантия</a></li>
-				<li class="footer-list-item"><a href="#">Контакты</a></li>
+				<li class="footer-list-item"><a class="footer-list-item-a" href="#">Доставка</a></li>
+				<li class="footer-list-item"><a class="footer-list-item-a" href="#">Гарантия</a></li>
+				<li class="footer-list-item"><a class="footer-list-item-a" href="#">Контакты</a></li>
 			</ul>
 			<ul class="social-list">
 				<li class="social-list-item"><a href="https://www.facebook.com/htmlacademy" target="_blank"><img src="img/facebook.svg" alt="facebook"></a></li>
@@ -386,7 +434,7 @@
 		</div>
 		<div class="hrefs">
 			<div class="href"> <a href="tel:88128121212">Тел.:+7(812)812-12-12</a> </div>
-			<div class="logo-2"> <img src="img/Group_2.svg" alt="html academy"> </div>
+			<a class="logo-2">.html<br><span class="academy">academy</span></a>
 		</div>
 	</footer>
 </body>

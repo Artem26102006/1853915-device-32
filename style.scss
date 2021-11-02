@@ -206,13 +206,13 @@ a{
 }
 
 .basket-catalog{
-    position: relative;
+    position: absolute;
     width: 320px;
     height: 302px;
     background-color: #000000;
-    z-index: 2;
-    right: 145px;
-    top: 13px;
+    z-index: 4;
+    right: -93px;
+    top: 35px;
 }
 .catalog-products{
     padding-left: 0px;
@@ -243,6 +243,10 @@ a{
 .cross{
     margin-bottom: 15px;
 }
+.cross:hover{opacity: 60%;}
+.cross:active{opacity: 30%;}
+
+
 .quantity_amount .meaning{
     margin-left: 0px;
 }
@@ -255,6 +259,7 @@ a{
 }
 .quantity_amount .quantity_amount-item{
     display: flex;
+    column-gap: 5px;
 }
 .quantity_amount-item-1{
     width: 120px;
@@ -284,7 +289,7 @@ a{
     opacity: 60%;
 }
 
-.cliker{
+.cliker, .appointment-submit{
     position: absolute;
     z-index: 2;
     display: inline-block;
@@ -301,7 +306,7 @@ a{
     background: none;
     border: none;
 }
-.cliker::before {
+.cliker::before, .appointment-submit::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -318,36 +323,36 @@ a{
     transition-property: transform;
     transition-property: transform,-webkit-transform;
 }
-.cliker:hover::before{
+.cliker:hover::before, .appointment-submit:hover::before, .cliker:hover::before, .appointment-submit:hover::before{
     transform: scaleY(5);
 }
 .cliker-3, .cliker-4, .cliker-5{
     width: 175px;
 }
-.cliker-3:active::before{
+.cliker-3:focus::before{
     width: 280px;
     background-color: #000000;
     
 }
-.cliker-3:active{
+.cliker-3:focus{
     color: #FFE17F;
     transition-duration: 300ms;
 }
-.cliker-4:active::before{
+.cliker-4:focus::before{
     width: 280px;
     background-color: #000000;
     
 }
-.cliker-4:active{
+.cliker-4:focus{
     color: #FFE17F;
     transition-duration: 300ms;
 }
-.cliker-5:active::before{
+.cliker-5:focus::before{
     width: 280px;
     background-color: #000000;
     
 }
-.cliker-5:active{
+.cliker-5:focus{
     color: #FFE17F;
     transition-duration: 300ms;
 }
@@ -706,11 +711,16 @@ a{
 }
 .cliker-podrobnee{
     margin-top: 5px;
-    
+}
+.cliker-podrobnee::before{
+    background-color: #FFE17F;
+}
+.cliker-podrobnee-2::before, .cliker-podrobnee-1::before{
+    background-color: #FFE17F;
 }
 .cliker-podrobnee-1{
     width: 260px;
-    
+    position: relative;
 }
 
 .slider-image{
@@ -782,8 +792,7 @@ a{
     margin-left: 14px;
     margin-top: 49px;
 }
-.opisanie{
-    
+.opisanie{  
     background-color: #F0F0F0;
     padding-left: 140px;
     margin-left: -110px;
@@ -820,11 +829,6 @@ a{
     left: 319px;
     top: -80px;
 }
-
-
-
-
-
 
 .two_guarantee .cliker-4{
     background-color: #000000;
@@ -875,6 +879,139 @@ a{
     left: 550px;
     bottom: 185px;
 }
+
+.wrapper{
+    position: relative;
+}
+.popup{
+    position: absolute;
+    z-index: 5;
+    width: 920px;
+    height: 580px;
+    background-color: white;
+    border: 10px solid black;
+    left:0px;
+    left: 200px;
+}
+.heading{
+    display: flex;
+    column-gap: 174px;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 72px;
+
+}
+.main-popup{
+    margin-left: 80px;
+    margin-right: 78px;
+}
+.delivery-popup{
+    font-size: 50px;
+    font-weight: 800;
+    width: 570px;
+    height: 60px;
+    margin: 0px;
+}
+.cross-heading{
+    align-self: flex-start;
+}
+.grid-popup{
+    display: grid;
+    grid-template-columns: 336px 360px; 
+    grid-template-rows: 60px 60px;
+    gap: 50px;
+    height: 170px;
+    margin-bottom: 80px;
+}
+.field-group{
+    margin: 0;
+}
+.field-group label,
+.field-group input {
+  display: block;
+}
+.field-group label{
+    font-size: 18px;
+    font-weight: 700;
+    height: 34px;
+}
+.field-group .field{
+    width: 510px;
+    height: 50px;
+    background-color: #F0F0F0;
+    border: none;
+    
+}
+.field-group .input-name{
+    width: 320px;
+    height: 50px;
+    background-color: #F0F0F0;
+    border: none;
+}
+.field-group .input-email{
+    width: 320px;
+    height: 50px;
+    background-color: #F0F0F0;
+    border: none;
+}
+.appointment-form-name{
+    margin-left: 165px;
+}
+.appointment-submit{
+    width: 220px;
+}
+.block{
+    width: 160px;
+    height: 50px;
+    background-color: #F0F0F0;
+    position: relative;
+    left: 550px;
+    bottom: 75px;
+}
+
+.minus-popup{
+    border-bottom: 2px solid black;
+    width: 16px;
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    opacity: 30%;
+    cursor: pointer;
+    
+}
+
+.block .number-popup{
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    top: 0%;
+    text-align: center;
+    line-height: 50px;
+    left: 50px;
+}
+
+.cross-popup{
+    cursor: pointer;
+    opacity: 30%;
+    position: absolute;
+    top: 36%;
+    left: 120px;
+}
+.profile-popup{
+    position: absolute;
+    bottom: 324px;
+    left: 366px;
+}
+
+
+
+
+
+
+
+
+
+
 .bonus{
     display: flex;
     align-items: center;
@@ -883,6 +1020,7 @@ a{
     background-color: #F0F0F0;
     height: 100px;
     width: 1260px;
+    cursor: pointer;
 }
 .bonus .lorry{
     position: relative;
@@ -890,6 +1028,17 @@ a{
     width: 125px;
     height: 100px;
     margin-right: 230px;
+    transition-duration: 200ms;
+}
+.bonus:hover{
+    background-color: #EBEBEB;
+}
+.bonus:active{
+    background-color: #EBEBEB;
+    opacity: 30%;
+}
+.bonus:hover .lorry{
+    background-color: #FFC700;
 }
 .lorry img{
     position: absolute;
@@ -900,13 +1049,24 @@ a{
     margin-left: auto;
     margin-right: 31px;
     border: none;
+    background-color: #F0F0F0;
     cursor: pointer;
+}
+.bonus:hover .info_Lorry{
+    background-color: #DCDCDC; 
+    border-top-left-radius: 25px 25px;
+	border-bottom-left-radius: 25px 25px; 
+    border-bottom-right-radius: 25px 25px; 
+    border-top-right-radius: 25px 25px
+}
+.bonus:hover .info-lorry{
+    background-color: #EBEBEB;
 }
 .first{
     display: flex;
     align-items: flex-start;
     margin-left: 25px;
-    margin-bottom: 86px;
+    margin-bottom: 90px;
 }
 .information-about-us{
     position: relative;
@@ -927,7 +1087,20 @@ a{
     width: 80px;
     padding-bottom: 40px;
 }
-
+//----------------------------------//
+.appointment-form-date{
+    position: relative;
+}
+.appointment-form-date::before{
+    content: "";
+    position: absolute;
+    background-image: url('img/search.svg');
+    width: 13px;
+    height: 12px;
+    top: 50px;
+    left: 280px;
+}
+//----------------------------------------/
 .information-about-us .title-us{
     width:170px;
     font-family: "Raleway", sans-serif;
@@ -1084,13 +1257,25 @@ a{
     margin-bottom: 63px;
     display: flex;
 }
-.footer-list-item a {
+.footer-list-item .footer-list-item-a {
     color: #FFFFFF;
     text-transform: uppercase;
     margin-right: 27px;
     font-family: "Rubik", sans-serif;
     font-weight: 800;
     letter-spacing: 0.2em;
+    transition-duration: 100ms;
+}
+.footer-list-item .footer-list-item-a:hover{
+    color: #FFC700;
+    border-bottom: 2px solid #FFC700;
+    padding-bottom: 8px;
+}
+.footer-list-item .footer-list-item-a:active{
+    color: #FFC700;
+    border-bottom: 2px solid #FFC700;
+    padding-bottom: 8px;
+    opacity: 30%;
 }
 .social-list {
     display: flex;
@@ -1102,11 +1287,31 @@ a{
     color: #F0F0F0;
     letter-spacing: 0.2em;
 }
+
+
 .href{
     margin-top: 138px;
     margin-left: 120px;
     margin-bottom: 53px;
 }
+.academy{
+    display: inline-block;
+    position: relative;
+    left: 215px;
+    top: -8px;
+}
 .logo-2{
+    font-family: "Raleway", sans-serif;
     margin-left: 200px;
+    color: #FFC700;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+}
+.logo-2:hover{
+    color: white;
+    cursor: pointer;
+}
+.logo-2:active{
+    color: white;
+    opacity: 30%;
 }
