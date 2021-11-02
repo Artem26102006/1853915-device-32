@@ -486,6 +486,48 @@ a {
   border: none;
 }
 
+.button {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  width: 160px;
+  padding: 8px 20px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: middle;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  background: none;
+  border: none;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #f0c52e;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-property: transform,-webkit-transform;
+}
+
+.button:hover::before {
+  -webkit-transform: scaleY(5);
+          transform: scaleY(5);
+}
+
 .bluetooth {
   border-top: 2px solid #000000;
   width: 200px;
@@ -553,24 +595,7 @@ a {
 }
 
 .button {
-  border: none;
-  font-weight: 800;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #FFC700;
-  width: 220px;
-  height: 8px;
-  line-height: 8px;
-  font-size: 16px;
-  letter-spacing: 0.2em;
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
-}
-
-.button:hover {
-  height: 40px;
-  line-height: 40px;
+  width: 200px;
 }
 
 .button:active {
@@ -642,6 +667,29 @@ a {
 .one-hover, .two-hover, .three-hover, .four-hover {
   width: 360px;
   height: 380px;
+  display: block;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.one-hover:hover, .two-hover:hover, .three-hover:hover, .four-hover:hover {
+  opacity: 0.6;
+}
+
+.one-hover:hover .hover-content {
+  display: block;
+}
+
+.two-hover:hover .hover-content {
+  display: block;
+}
+
+.three-hover:hover .hover-content {
+  display: block;
+}
+
+.four-hover:hover .hover-content {
+  display: block;
 }
 
 .new {
@@ -651,43 +699,13 @@ a {
   display: none;
 }
 
-.one-hover:hover .hover-content {
-  display: block;
-}
-
 .four-hover:hover .new {
-  display: block;
-}
-
-.two-hover:hover .hover-content {
-  position: absolute;
-  top: 180px;
-  left: 70px;
-  display: block;
-}
-
-.three-hover:hover .hover-content {
-  position: absolute;
-  top: 180px;
-  left: 70px;
-  display: block;
-}
-
-.four-hover:hover .hover-content {
-  position: absolute;
-  top: 180px;
-  left: 70px;
   display: block;
 }
 
 .two {
   margin: 0px;
   position: relative;
-}
-
-.photo-2 {
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
 }
 
 .one {
@@ -702,37 +720,6 @@ a {
 .four {
   margin: 0px;
   position: relative;
-}
-
-.photo-1 {
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
-}
-
-.photo-1:hover {
-  opacity: 0.3;
-}
-
-.photo-2:hover {
-  opacity: 0.3;
-}
-
-.photo-3 {
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
-}
-
-.photo-3:hover {
-  opacity: 0.3;
-}
-
-.photo-4 {
-  -webkit-transition-duration: 300ms;
-          transition-duration: 300ms;
-}
-
-.photo-4:hover {
-  opacity: 0.3;
 }
 
 .gallery-block-1 {

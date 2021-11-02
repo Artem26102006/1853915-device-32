@@ -439,6 +439,47 @@ a {
 .about_bluetooth{
 	border: none;
 }
+
+
+.button{
+    position: absolute;
+    z-index: 2;
+    display: inline-block;
+    width: 160px;
+    padding: 8px 20px;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: middle;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    background: none;
+    border: none;
+}
+.button::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 8px;
+    margin-top: -4px;
+    background-color: #f0c52e;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+}
+.button:hover::before{
+    transform: scaleY(5);
+}
+
+
 .bluetooth {
 	border-top: 2px solid #000000;
 	width: 200px;
@@ -502,23 +543,8 @@ a {
   .control-input:disabled + .control-mark {
 	border-color: #242424;
   }
-.button {
-	border: none;
-	font-weight: 800;
-	font-size: 18px;
-	text-transform: uppercase;
-	text-align: center;
-	background-color: #FFC700;
-	width: 220px;
-	height: 8px;
-	line-height: 8px;
-	font-size: 16px;
-	letter-spacing: 0.2em;
-	transition-duration: 300ms;
-}
-.button:hover{
-	height: 40px;
-    line-height: 40px;
+.button{
+	width: 200px;
 }
 .button:active{
 	opacity: 30%;
@@ -570,6 +596,7 @@ a {
 }
 
 
+
 .hover-content{
 	position: absolute;
     top: 180px;
@@ -579,50 +606,49 @@ a {
 .one-hover, .two-hover, .three-hover, .four-hover{
 	width: 360px;
 	height:380px;
+	display: block;
+	transition-duration: 300ms;
+}
+.one-hover:hover, .two-hover:hover, .three-hover:hover, .four-hover:hover{
+	opacity: 0.6;	
+}
+
+.one-hover:hover .hover-content{
+	display: block;
+}
+.two-hover:hover .hover-content{
+	display: block;
+}
+.three-hover:hover .hover-content{
+	display: block;
+}
+.four-hover:hover .hover-content{
+	display: block;
 }
 .new {
 	position: absolute;
 	bottom: 367px;
 	left: 273px;
-	display: none;
-	
-}
-
-.one-hover:hover .hover-content{
-	
-    display: block;
+	display: none;	
 }
 .four-hover:hover .new{
 	display: block;
 }
-.two-hover:hover .hover-content{
-	position: absolute;
-    top: 180px;
-    left: 70px;
-    display: block;
-}
 
-.three-hover:hover .hover-content{
-	position: absolute;
-    top: 180px;
-    left: 70px;
-    display: block;
-}
-.four-hover:hover .hover-content{
-	position: absolute;
-    top: 180px;
-    left: 70px;
-    display: block;
-}
+
+
+
+
+
+
+
+
+
+
 .two {
 	margin: 0px;
 	position: relative;
 }
-
-.photo-2 {
-	transition-duration: 300ms;
-}
-
 
 .one {
 	margin: 0px;
@@ -638,32 +664,6 @@ a {
 	position: relative;
 }
 
-.photo-1{
-	transition-duration: 300ms;
-}
-.photo-1:hover{
-	opacity: 0.3;
-}
-
-.photo-2:hover {
-	opacity: 0.3;
-}
-
-.photo-3 {
-	transition-duration: 300ms;
-}
-
-.photo-3:hover {
-	opacity: 0.3;
-}
-
-.photo-4 {
-	transition-duration: 300ms;
-}
-
-.photo-4:hover {
-	opacity: 0.3;
-}
 
 .gallery-block-1 {
 	display: flex;
