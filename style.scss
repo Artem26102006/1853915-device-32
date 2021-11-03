@@ -142,78 +142,23 @@ a{
 }
 
 
-.catalog-item:hover .subcatalog{
-    display: block;
-    position: relative;
-    display: grid;
-    grid-template-areas: 
-    "virt gym kvadra"
-    "mono smart ."
-    "camers . .";
-    gap: 20px;
-    z-index: 4;
-    
-}
-.circle-1{
-    width: 45px;
-    height: 45px;
-    position: absolute; 
-    bottom:1px; 
-    right: 1px;
-    border: 2px solid #000000;
-    border-radius: 50%;
-}
-.line-minus{
-    width: 16px;
-    border-top: 2px solid #000000;
-    position: relative;
-    top: 0px;
-    left: 10px;
-    display: none;
-}
 
 
-.button-plus:hover .line-minus{
-    display: block;
-}
-.button-plus:hover .plus-1{
-    display: none;
-}
-.button-plus:hover .plus-2{
-    display: none;
-}
-.button-plus:hover .circle{
-    display: none;
-}
-.button-plus:focus .line-minus{
-    display: block;
-}
 
-.button-plus:active .line-minus{
-    opacity: 30%;
-}
-.button-plus:active{
-    opacity: 35%;
-}
-.button-plus:focus .plus-1{
-    display: none;
-}
-.button-plus:focus .plus-2{
-    display: none; 
-}
-.button-plus:focus .circle{
-    display: none;
-}
+
+
 
 .basket-catalog{
     position: absolute;
     width: 320px;
     height: 302px;
     background-color: #000000;
-    z-index: 4;
+    z-index: 10;
     right: -93px;
     top: 35px;
+    
 }
+
 .catalog-products{
     padding-left: 0px;
 }
@@ -365,29 +310,44 @@ a{
     background-color: #000000;
     cursor: pointer;
 }
+.catalog-item:hover .subcatalog{
+    display: block;
+    position: relative;
+    display: grid;
+    grid-template-areas:
+        "virt gym kvadra"
+        "mono smart ."
+        "camers . .";
+    gap: 15px;
+    z-index: 4;
+    padding-right: 516px;
+    padding-left: 100px;
+    padding-bottom: 70px;
+    margin-top: -6px;   
+}
 .catalog-item:focus-within .subcatalog{
     display: block;
     position: relative;
     display: grid;
-    grid-template-areas: 
-    "virt gym kvadra"
-    "mono smart ."
-    "camers . .";
-    gap: 20px;
+    grid-template-areas:
+        "virt gym kvadra"
+        "mono smart ."
+        "camers . .";
+    gap: 15px;
     z-index: 4;
+    padding-right: 516px;
+    padding-left: 100px;
+    padding-bottom: 70px;
+    margin-top: -6px;
 }
 .subcatalog {
     display: none;
     position: relative;
-    right: 290px;
-    top: 0px;
     background-color: #FFE17F;
-    padding-left: 91px;
-    height: 170px;
-    padding-right: 511px;
-    margin-left: -60px;
-    margin-top: -2px;
+    right: 100px;
+    
 }
+
 .subcatalog .subcatalog-item:hover{
     opacity: 60%;
 }
@@ -452,6 +412,13 @@ a{
     padding: 0;
     margin: 0;
 }
+.slider{
+    box-sizing: border-box;
+}
+.sliders-slider{
+    padding: 0;
+     padding-left: 20px;
+}
 .nav-user-list .nav-user-item{
     position: absolute;
 }
@@ -459,19 +426,23 @@ a{
     display: flex;
    
 }
+.nav-user-item-opacity:active{
+    opacity: 30%;
+}
 .nav-user-list .nav-user-item:nth-child(2){
     left: 620px;
 }
-.nav-user-list a:nth-child(2):hover{
-    opacity: 0.6;
-}
+
 
 .nav-user-list .nav-user-item:nth-child(3){
     left: 910px;
 }
 
-.nav-user-list a:last-child:hover{
+.nav-user-list a:hover{
     opacity: 0.6;
+}
+.nav-user-list a:active{
+    opacity: 30%;
 }
 
 .nav-user-list .nav-user-item:last-child{
@@ -489,9 +460,10 @@ a{
     line-height: 21px;
     bottom: 0px;
     font-size: 14px; 
-    bottom:303px;
-    left: -15px;
+    
 }
+
+
 .main-nav-list{
     display: flex;
     justify-content: space-between;
@@ -508,7 +480,6 @@ a{
 }
 
 .main-nav-list .main-nav-item:nth-child(2){
-    left: 290px;
     border: none;
     cursor: pointer;
     opacity: 1;
@@ -537,33 +508,34 @@ a{
     cursor: pointer;
     border: none;
     bottom: 17px; 
-    left: 17px; 
+    left: 270px; 
     background-color: #FFE17F;
 }
-.circle{
-    position: absolute; 
-    bottom:1px; 
-    right: 1px;
-    border: 2px solid #000000;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
+
+
+.plus{
+    position: absolute;
+    top: 18px;
+    right: 11px;
+    opacity: 30%;
 }
-.plus-1{
-    position: relative;
-    width: 18px;
-    border-top: 2px solid black;
-    left: 9px;
-    top:1px;
+.minus{
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 11px;
+    opacity: 30%;
 }
-.plus-2{
-    position: relative;
-    width: 17px;
-    border-top: 2px solid black;
-    left: 9px;
-    transform: rotate(90deg);
-    bottom: 2px;
+.button-plus:hover .minus{
+    display: block;
 }
+.button-plus:hover .plus{
+    display: none;
+}
+.button-plus:active{
+    opacity: 30%;
+}
+
 
 .search{
     margin-right: 5px;
@@ -874,6 +846,7 @@ a{
     position: relative;
     
 }
+
 .title-middle-second{
     font-size: 50px;
     font-family: "Raleway", sans-serif;
@@ -888,6 +861,15 @@ a{
 
 .wrapper{
     position: relative;
+}
+
+.info-popup{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border: 2px solid black;
+    left: 750px;
+    top: 270px;
 }
 .popup{
     position: absolute;

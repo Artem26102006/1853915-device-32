@@ -17,13 +17,16 @@
 					<input class="nav-user-item-button" type="text" name="poisk" placeholder="Поиск по сайту"><div class="sike hidden">Найти</div>
 
 				</li>
-				<li class="nav-user-item"> <img src="img/user.svg" class="logo" alt="logo"> <a href="#">Войти</a> </li>
-				<li class="nav-user-item"> <img src="img/compare.svg" alt="compare" class="compare"> <a href="#">Сравнить</a> </li>
+				<li class="nav-user-item logo-in">
+					<img src="img/user.svg" class="logo" alt="logo"> 
+					<a href="#" class="nav-user-item-opacity">Войти</a> 
+				</li>
+				<li class="nav-user-item"> <img src="img/compare.svg" alt="compare" class="compare"> <a href="#" class="nav-user-item-opacity">Сравнить</a> </li>
 				<li class="nav-user-item"> 
 					<div class="in_the_basket">2</div>
 					<img src="img/cart.svg" alt="basket" class="basket">
-					<a class="basket-button" href="#">Корзина</a>
-					<div class="basket-catalog hidden">
+					<a class="basket-button nav-user-item-opacity" href="#">Корзина</a>
+					<div class="basket-catalog basket-catalog-popup">
 						<ul class="catalog-products">
 							<li class="catalog-products-item-1">
 								<img class="picture-product-1" src="img/product-1-small.png">
@@ -66,13 +69,10 @@
 
 				<li class="main-nav-item catalog-item">
 					<button class="button-plus">
-						<div>
-							<div class="circle"></div>
-							<div class="plus-1"></div>
-							<div class="plus-2"></div>
-							<div class="circle-1"></div>
-							<div class="line-minus"></div>
-						</div>
+						
+						<img src="img/circle.svg">
+						<img class="plus" src="img/plus-catalog.svg">
+						<img class="minus" src="img/minus-grid.svg">
 					</button>
 					<ul class="subcatalog">
 						<li class="subcatalog-item"><a href="#">Виртуальная реальность</a></li>
@@ -98,8 +98,8 @@
 	<main class="main">
 		<section class="sliders">
 			<h2 class="hidden">Слайдеры</h2>
-			<ul style="padding: 0; padding-left: 20px;">
-				<li class="slider" style="box-sizing: border-box;">
+			<ul class="sliders-slider">
+				<li class="slider"">
 					<div class="slider-picture">
 					   <button class="slider-button">
 					   <img class="slider-button-left" src="img/left-tall-arrow.svg" alt="arrow">
@@ -256,9 +256,9 @@
 			<h2 class="hidden">Достака,Гарантия,Кредит</h2>
 			<ul class="delivery_guarantee_credit">
 				<li class="one_delivery">
-					<ul class="prochee">
+					<ul class="prochee" >
 						<li> <button class="cliker cliker-3">Доставка</button> </li>
-						<li> <button class="cliker cliker-4">Гарантия</button> </li>
+						<li> <button class="cliker cliker-4 cliker-4-one">Гарантия</button> </li>
 						<li> <button class="cliker cliker-5">Кредит</button> </li>
 						<li><div class="line"></div></li>
 					</ul>
@@ -331,7 +331,13 @@
 							</p>
 
 							<p class="field-group appointment-form-name">
-								<label class="kol" for="kol-popup">Количество:</label>
+								<label class="kol" for="kol-popup">
+									Количество:
+									<div class="info-popup">
+										<div class="svg-infa"></div>
+										<div class="circle-info-popup"></div>
+									</div>
+								</label>
 								<div class="block">
 									<div class="minus-popup"></div>
 									<div class="number-popup">1</div>
