@@ -26,7 +26,8 @@
 					<div class="in_the_basket">2</div>
 					<img src="img/cart.svg" alt="basket" class="basket">
 					<a class="basket-button nav-user-item-opacity" href="#">Корзина</a>
-					<div class="basket-catalog basket-catalog-popup">
+					<div class="basket-catalog" >
+						<div class="square"></div>
 						<ul class="catalog-products">
 							<li class="catalog-products-item-1">
 								<img class="picture-product-1" src="img/product-1-small.png">
@@ -61,7 +62,7 @@
 			</ul>
 		</nav>
 		<nav class="main-nav">
-			<ul class="main-nav-list">
+			<ul class="main-nav-list" >
 
 				<li class="main-nav-item">
 					<a href="#">Каталог товаров</a>
@@ -299,58 +300,68 @@
 
 			</ul>
 		</section>
-		<div class="wrapper">
-			<div class="popup">
-				<div class="heading">
-					<h2 class="delivery-popup">Доставка под заказ</h2>
-					<img src="img/cross-black.svg" class="cross-heading"> 
-				</div>
-				<div class="main-popup">
-					<form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-						<div class="grid-popup">
-							<p class="field-group appointment-form-date" style="position: relative;">
-								<label class="form-label" for="appointment-date">
-									Ваше имя:
-								</label>
-								<input class="input-name" type="text" id="appointment-date" name="appointment-date" placeholder="Имя Фамилия" required>
+			<div class="wrapper">
+				<div class="popup">
+					<div class="heading">
+						<h2 class="delivery-popup">Доставка под заказ</h2>
+						<img src="img/cross-black.svg" class="cross-heading"> 
+					</div>
+					<div class="main-popup">
+						<form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+							<div class="grid-popup">
+								<p class="field-group appointment-form-date" style="position: relative;">
+									<label class="form-label" for="appointment-date">
+										Ваше имя:<img src="img/profile-popup.svg" class="profile-popup">
+									</label>
+									<input class="input-name" type="text" id="appointment-date" name="appointment-date" placeholder="Имя Фамилия" required>
+									<span>Пожалуйста, представьтесь</span>
+								</p>
 
-							</p>
+								<p class="field-group appointment-form-time">
+									<label class="form-label" for="appointment-time">
+										Ваш e-mail:<img class="e-mail-popup" src="img/e-mail-popup.svg">
+									</label>
+									<input class="input-email" type="email" id="appointment-time" name="appointment-time" placeholder="Ваш e-mail" equired>
+									<span>Забавный у вас адрес</span>
+								</p>
 
-							<p class="field-group appointment-form-time">
-								<label class="form-label" for="appointment-time">
-									Ваш e-mail:
-								</label>
-								<input class="input-email" type="email" id="appointment-time" name="appointment-time" placeholder="krasotka92@mail.ru" required>
-							</p>
+								<p class="field-group appointment-form-delivery">
+									<label class="form-label" for="appointment-phone">
+										Что нужно привезти:
+									</label>
+									<input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="В свободной форме" required>
+								</p>
 
-							<p class="field-group appointment-form-delivery">
-								<label class="form-label" for="appointment-phone">
-									Что нужно привезти:
-								</label>
-								<input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="В свободной форме" required>
-							</p>
-
-							<p class="field-group appointment-form-name">
-								<label class="kol" for="kol-popup">
-									Количество:
+								<p class="field-group appointment-form-name">
+									<label class="kol" for="kol-popup">
+										Количество:
+									</label>
 									<div class="info-popup">
-										<div class="svg-infa"></div>
-										<div class="circle-info-popup"></div>
-									</div>
-								</label>
-								<div class="block">
-									<div class="minus-popup"></div>
-									<div class="number-popup">1</div>
-									<img src="img/cross-popup (1).svg" class="cross-popup">
-								</div>
-							</p>
-						</div>
-						<button class="button appointment-submit" type="submit">Отправить</button>
 
-					</form>
+										<div class="svg-infa">
+											<img class="info-6" src="img/info 6.svg">
+											<img class="circle-info-popup" src="img/Ellipse 41.png">
+											<div class="promice-delivery">
+												Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.	
+											</div>
+										</div>
+											
+									</div>
+										
+									
+									<div class="block">
+										<div class="minus-popup"></div>
+										<div class="number-popup">1</div>
+										<img src="img/cross-popup (1).svg" class="cross-popup">
+									</div>
+								</p>
+							</div>
+							<button class="button appointment-submit" type="submit">Отправить</button>
+
+						</form>
+					</div>
 				</div>
 			</div>
-		</div>
 		<div class="bonus-block"> 
 			<a class="bonus">
 				<div class="lorry">
