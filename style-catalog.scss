@@ -66,11 +66,12 @@ button{
     width: 21px;
     height: 21px;
     border-radius: 50%;
-    right: 85px;
+    right: 81px;
     text-align: center;
     line-height: 21px;
     bottom: 0px;
     font-size: 14px; 
+	
 }
 
 
@@ -93,46 +94,88 @@ button{
 .main-nav-list {
 	list-style-type: none;
 }
-
 .nav-user-item-button {
 	background-color: #ffe17f;
 	border: none;
 	opacity: 30%;
-	padding: 5px;
 	font-size: 16px;
-	
+    padding-bottom: 15px;
+    padding-top: 15px;
+    outline: none;
+	padding-left: 50px;
+	width: 250px;
+	height: 4px;
 }
 
-.nav-user-item-button:hover {
-	opacity: 0.8;
+.nav-user-item-button:hover , .nav-user-item-button:focus {
+	opacity: 80%;  
+    box-shadow: inset 0px 0px 0px 1.5px #000000;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
+.search-picture{
+	position: absolute;
+	top:8px; 
+	left: 15px;
+}
+.nav-user-list{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    position: relative;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+}
 .sike{
-	opacity: 0.3;
-	position: relative;
-	align-self: center;
-	border: 2px solid #000000;
-	padding: 5px;
-	border-radius: 20px;
-	padding-left: 40px;
-	padding-right: 40px;
-	right: 6px;
-	border-top-left-radius: 0px 0px;
-	border-bottom-left-radius: 0px 0px;
-	transition-duration: 250ms;
-	cursor: pointer;
+    position: relative;
+    display: none;
 }
 
 .sike:hover{
 	background-color: #000000;
 	color: #FFFFFF;
 	opacity: 1;
+    
 }
 .sike:active{
 	color: #332e2e;
 	background-color: #000000;
 	transition-duration: 50ms;
 	opacity: 1;
+}
+.search-infa:hover .sike{
+    opacity: 1;
+	align-self: center;
+	box-shadow: inset 0px 0px 0px 1.5px #000000;
+	padding: 5px;
+	padding-top: 8px;
+	border-radius: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	right: 6px;
+	border-top-left-radius: 0px 0px;
+	border-bottom-left-radius: 0px 0px;
+	cursor: pointer;
+    display: block;
+}
+.search-infa::before{
+    content: url('../img/search.svg');
+    position: absolute;
+    left: 15px;
+    top: 8px;
+}
+.logo-image{
+    background: url('../img/user.svg') left no-repeat;
+    padding-left: 25px;
+}
+.compare-image{
+    background: url('../img/compare.svg') left no-repeat;
+    padding-left: 20px;
+}
+.basket-image{
+    background: url('../img/cart.svg') left no-repeat;
+    padding-left: 27px;
 }
 
 .leave {
@@ -200,19 +243,20 @@ a {
     display: flex;
     align-items: stretch;
     column-gap: 5px;
+	left: 25px;
 	
 }
 
 .nav-user-list .nav-user-item{
     position: absolute;
-;
+
 }
 
 .nav-user-item:nth-child(2){
-	left: 640px;
+	left:700px;
 }
 .nav-user-item:nth-child(3){
-	left: 970px;
+	left: 965px;
 }
 
 .nav-user-item:last-child{
@@ -221,7 +265,7 @@ a {
 
 .leave-button-block{
 	position: absolute;
-	left: 215px;
+	left: 160px;
 	bottom: -1px;
 }
 .leave-button-block:hover{
@@ -264,7 +308,7 @@ a {
 	left: 1100px;
 }
 
-.main-nav-item a:focus{
+.main-nav-item .a-main:focus{
     border: 2px solid #AF4FFF;
     border-radius: 20px;
     padding: 5px;
@@ -404,7 +448,10 @@ a {
 	width: 590px;
 	list-style: none;
 }
-
+.subcatalog .subcatalog-item{
+    font-size: 18px;
+    font-weight: 400;
+}
 .subcatalog .subcatalog-item:hover{
     opacity: 60%;
 }
@@ -414,11 +461,11 @@ a {
 
 .subcatalog li:first-child{
     grid-area: virt;
-    width: 270px;
+    width: 280px;
 }
 .subcatalog li:nth-child(2){
     grid-area: gym;
-    width: 190px;
+    width: 200px;
 }
 .subcatalog li:nth-child(3){
     grid-area: kvadra;
@@ -469,22 +516,6 @@ a {
 }
 
 
-.search {
-	margin-right: 10px;
-	margin-top: 6px;
-}
-
-.logo {
-	margin-right: 12px;
-}
-
-.compare {
-	margin-right: 10px;
-}
-
-.basket{
-    margin-right: 10px;
-}
 
 .one-part {
 	margin-left: 95px;
