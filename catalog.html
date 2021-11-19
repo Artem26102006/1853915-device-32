@@ -17,9 +17,11 @@
 		<nav class="nav-user">
 			<ul class="nav-user-list">
 				<li class="nav-user-item search-infa"> 
-					
-					<input class="nav-user-item-button search-image" type="text" name="poisk" placeholder="Поиск по сайту">
-					<div class="sike ">Найти</div>
+					<form class="site-search-form" action="https://echo.htmlacademy.ru/" method="post">
+						<label for="search" class="hidden">Поиск по сайту</label>
+						<input class="input-text input-site-search" type="search" name="search-text" id="search" placeholder="Поиск по сайту">
+						<button class="search button-search" type="submit">Найти</button>
+					</form>
 
 				</li>
 				<li class="nav-user-item logo-in">
@@ -80,9 +82,7 @@
 				<li class="main-nav-item catalog-item">
 					<button class="button-plus" >
 						
-						<img src="img/circle.svg" alt="">
-						<img class="plus" src="img/plus-catalog.svg">
-						<img class="minus" src="img/minus-grid.svg">
+						
 					</button>
 					<ul class="subcatalog">
 						<li class="subcatalog-item"><a href="#">Виртуальная реальность</a></li>
@@ -118,7 +118,7 @@
 	<main class="main-really">
 		<section class="filter">
 			<div class="first">
-				<h3 style="font-weight: 800;">Фильтр:</h3>
+				<h3>Фильтр:</h3>
 			</div>
 			<form class="main-section" action="https://echo.htmlacademy.ru/" method="get">
 				
@@ -206,15 +206,19 @@
             			<option>Сначала популярные</option>
           			</select> 
 				</div>
-				<button class="button-triangle"><img src="img/triangle.svg" class="reverse-triangle"></button>
-				<button class="button-triangle"><img src="img/triangle.svg" class="reverse-triangle-1"></button>
+				<button class="button-triugolnik-1" type="button">
+					<span class="hidden">вверх</span>
+				</button>
+				<button class="button-triugolnik-2" type="button">
+					<span class="hidden">вниз</span>
+				</button>
 			</div>
 			<div class="full-sort-gallery">
 				<div class="gallery">
 					<figure class="one"> 
 						<div class="one-hover">
-							<img class="photo-1" src="img/catalog/product-1 (1).jpg" alt="Любительская селфи-палка" width="360" height="380">
-							<button class="hover-content button">Подробнее</button>
+							<img class="photo-1" src="img/catalog/product-1(1).jpg" alt="Любительская селфи-палка" width="360" height="380">
+							<a href="#" class="hover-content button">Подробнее</a>
 						</div>
 						<figcaption class="gallery-block-1">
 							<span>Любительская селфи-палка</span>
@@ -225,7 +229,7 @@
 					<figure class="two"> 
 						<div class="two-hover">
 							<img class="photo-2" src="img/catalog/product-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-							<button class="hover-content button">Подробнее</button>
+							<a href="#" class="hover-content button">Подробнее</a>
 						</div>
 						<figcaption class="gallery-block-2">
 							<span>Профессиональная <br> селфи-палка</span> 
@@ -236,7 +240,7 @@
 					<figure class="three"> 
 						<div class="three-hover">
 							<img class="photo-3" src="img/catalog/product-3.jpg" alt="Непотопляемаяселфи-палка" width="360" height="380">
-							<button class="hover-content button">Подробнее</button>
+							<a href="#" class="hover-content button">Подробнее</a>
 						</div>
 						<figcaption class="gallery-block-3">
 							Непотопляемая <br> селфи-палка <span class="twenty-five">2 500 ₽</span>
@@ -244,9 +248,9 @@
 					</figure>
 					<figure class="four"> 
 						<div class="four-hover" >
-							<img class="photo-4" src="img/catalog/product-4.jpg" alt="Селфи-палка «Следуй за мной»"> 
-							<img class="new" src="img/catalog/New.svg" alt="new-product">
-							<button class="hover-content button">Подробнее</button>
+							<img class="photo-4" src="img/catalog/product-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380"> 
+							<img class="new" src="img/catalog/New.svg" alt="new-product" width="60" height="60">
+							<a href="#" class="hover-content button">Подробнее</a>
 						</div>
 						<figcaption class="gallery-block-4">
 							Селфи-палка «Следуй за <br> мной» 
@@ -323,7 +327,9 @@
 			</ul>
 		</div>
 		<div class="hrefs">
-			<div class="href"> <a href="tel:88128121212">Тел.:+7(812)812-12-12</a> </div>
+			<div class="href"> 
+				<a href="tel:88128121212">Тел.:+7(812)812-12-12</a>
+			</div>
 			<a class="logo-2">.html<br><span class="academy">academy</span></a>
 		</div>
 	</footer>
