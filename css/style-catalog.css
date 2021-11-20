@@ -718,6 +718,7 @@ body {
 
 .filter-price {
   margin-bottom: 36px;
+  border: none;
 }
 
 .button-min, .button-max {

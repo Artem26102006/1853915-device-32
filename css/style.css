@@ -983,7 +983,7 @@ body {
   padding-bottom: 300px;
 }
 
-.goods .link:active {
+.goods .link:active figure {
   opacity: 30%;
   background-color: #FFC700;
 }
@@ -1525,10 +1525,7 @@ body {
 }
 
 .information-about-us-company .information-about-us-company-item {
-  background: url("../img/ellipse11.png") left no-repeat;
-  padding-left: 26px;
   margin-bottom: 20px;
-  margin-left: -38px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -1537,11 +1534,19 @@ body {
   margin-bottom: 0px;
 }
 
+.information-about-us-company .information-about-us-company-item::before {
+  content: url("../img/ellipse11.png");
+  position: relative;
+  bottom: 1.5px;
+  padding-right: 20px;
+}
+
 .information-about-us .information-about-us-company {
   margin-top: 0px;
   height: 122px;
   margin-bottom: 54px;
   list-style: none;
+  padding-left: 0px;
 }
 
 .contacts .title-contacts {
