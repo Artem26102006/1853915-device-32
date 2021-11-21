@@ -2,7 +2,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: url(fonts/raleway/raleway-800.woff2) format("woff2");
+  src: url("fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: url(fonts/rubik/rubik-700.woff2) format("woff2");
+  src: url("fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -18,7 +18,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/rubik/rubik-400.woff2) format("woff2");
+  src: url("fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -26,7 +26,7 @@
   font-family: "Rubik";
   font-style: normal;
   font-weight: 800;
-  src: url(fonts/rubik/rubik-800.woff2) format("woff2");
+  src: url("fonts/rubik/rubik-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -189,28 +189,28 @@ body {
 }
 
 .search-infa::before {
-  content: url("../img/search.svg");
+  content: url("../img/spisok/search.svg");
   position: absolute;
   left: 15px;
   top: 10px;
 }
 
 .logo-image {
-  background: url("../img/user.svg") left no-repeat;
+  background: url("../img/spisok/user.svg") left no-repeat;
   padding-left: 25px;
   width: 13px;
   height: 12px;
 }
 
 .compare-image {
-  background: url("../img/compare.svg") left no-repeat;
+  background: url("../img/spisok/compare.svg") left no-repeat;
   padding-left: 20px;
   width: 10px;
   height: 12px;
 }
 
 .basket-image {
-  background: url("../img/cart.svg") left no-repeat;
+  background: url("../img/spisok/cart.svg") left no-repeat;
   padding-left: 27px;
   width: 16px;
   height: 14px;

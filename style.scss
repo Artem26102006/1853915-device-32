@@ -216,7 +216,7 @@ body{
 
 
 .search-infa::before{
-    content: url('../img/search.svg');
+    content: url('../img/spisok/search.svg');
     position: absolute;
     left: 15px;
     top: 10px;
@@ -578,15 +578,15 @@ opacity: 30%;
     left: 1044px;
 }
 .logo-image{
-    background: url('../img/user.svg') left no-repeat;
+    background: url('../img/spisok/user.svg') left no-repeat;
     padding-left: 25px;
 }
 .compare-image{
-    background: url('../img/compare.svg') left no-repeat;
+    background: url('../img/spisok/compare.svg') left no-repeat;
     padding-left: 20px;
 }
 .basket-image{
-    background: url('../img/cart.svg') left no-repeat;
+    background: url('../img/spisok/cart.svg') left no-repeat;
     padding-left: 27px;
 }
 
@@ -1021,7 +1021,6 @@ opacity: 30%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 20;
-    display: none;
 }
 
 
@@ -1035,14 +1034,10 @@ opacity: 30%;
 }
 .svg-infa{
     position: absolute;
-    top: 3px;
+    top: 4px;
     left: 12px;
 }
-.info-6{
-    position: absolute;
-    left: 12px;
-    top: 6px;
-}
+
 .promice-delivery{
     position: absolute;
     background-color: #000000;
@@ -1109,6 +1104,18 @@ opacity: 30%;
 .field-group label,
 .field-group input {
   display: block;
+}
+.input-form-label::after{
+    content: url('../img/user-input.svg');
+    position: absolute;
+    top: 49px;
+    left: 280px;
+}
+.email-form-label::after{
+    content: url('../img/e-mail-popup.svg');
+    position: absolute;
+    top: 49px;
+    left: 280px;
 }
 .field-group input{
     font-size: 16px;
