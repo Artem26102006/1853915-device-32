@@ -116,9 +116,7 @@ body {
   border: 2px solid rgba(0, 0, 0, 1);
   border-right: none;
 }
-.button {
-  font-family: "Raleway", sans-serif;
-}
+
 .input-text {
   font-family: inherit;
   font-size: inherit;
@@ -946,7 +944,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 20;
   font-family: "Rubik";
   display: none;
@@ -993,8 +991,8 @@ body {
   z-index: 5;
   width: 920px;
   height: 580px;
-  background-color: #ffffff;
-  border: 10px solid #000000;
+  background-color: white;
+  border: 10px solid black;
 }
 .heading {
   display: flex;
@@ -1093,7 +1091,7 @@ body {
 }
 
 .minus-popup {
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid black;
   width: 16px;
   position: absolute;
   top: 50%;
@@ -1229,7 +1227,7 @@ body {
 .title-us::before {
   content: "";
   display: block;
-  border-bottom: 7px solid #000000;
+  border-bottom: 7px solid black;
   width: 70px;
   position: relative;
   bottom: 40px;
@@ -1237,7 +1235,7 @@ body {
 .title-contacts::before {
   content: "";
   display: block;
-  border-bottom: 7px solid #000000;
+  border-bottom: 7px solid black;
   width: 70px;
   position: relative;
   bottom: 40px;
