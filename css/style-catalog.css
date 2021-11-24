@@ -532,6 +532,16 @@ body {
   opacity: 30%;
 }
 
+.subcatalog a {
+  font-size: 16px;
+}
+
+.subcatalog a:focus {
+  border: 2px solid #af4fff;
+  border-radius: 25px;
+  padding: 5px;
+}
+
 .subcatalog li:first-child {
   -ms-grid-row: 1;
   -ms-grid-column: 1;

@@ -443,7 +443,14 @@ body {
 .subcatalog .subcatalog-item:active {
   opacity: 30%;
 }
-
+.subcatalog a{
+  font-size: 16px;
+}
+.subcatalog a:focus{
+  border: 2px solid #af4fff;
+  border-radius: 25px;
+  padding: 5px;
+}
 .subcatalog li:first-child {
   grid-area: virt;
   width: 295px;
